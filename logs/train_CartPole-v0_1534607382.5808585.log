@@ -1,0 +1,331 @@
+18-19-2018 21:19:42 IST - RESULT -     INFO :: ==============================================================================================================
+18-19-2018 21:19:42 IST - RESULT -     INFO :: OpenAI Gym Task : CartPole-v0 Solution program
+18-19-2018 21:19:42 IST - RESULT -    DEBUG :: Initial Timestamp : 1534607382.5808585
+18-19-2018 21:19:42 IST - RESULT -     INFO :: Starting new instance of the program in  train mode...
+18-19-2018 21:19:42 IST - RESULT -     INFO :: Initialised with parameters
+18-19-2018 21:19:42 IST - RESULT -    DEBUG :: Parameters list : {'mode': 'train', 'itr_count': 2000, 'batch_size': 64, 'lr': 0.0001, 'gamma': 0.99, 'render': True, 'model_path': None, 'test_total_iterations': None, 'avg_expected_reward': 195.0}
+18-19-2018 21:19:42 IST -   MAIN -     INFO :: OpenAI Gym Env. under effect : CartPole-v0
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: State shape: (4,)
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: Number of actions: 2
+18-19-2018 21:19:42 IST -   MAIN -     INFO :: Initialising DDQN Agent with params : {'env': <TimeLimit<CartPoleEnv<CartPole-v0>>>, 'batch_size': 64, 'gamma': 0.99, 'tau': 0.001, 'Q_targets': 0.0, 'state_size': 4, 'action_size': 2, 'callbacks': []}
+18-19-2018 21:19:42 IST -   MAIN -     INFO :: Initialising Local DQNetwork
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: Model Summery:
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: Layer (type)                 Output Shape              Param #   
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: =================================================================
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: states (InputLayer)          (None, 4)                 0         
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: dense_1 (Dense)              (None, 256)               1280      
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: activation_1 (Activation)    (None, 256)               0         
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: dropout_1 (Dropout)          (None, 256)               0         
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: dense_2 (Dense)              (None, 256)               65792     
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: activation_2 (Activation)    (None, 256)               0         
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: dropout_2 (Dropout)          (None, 256)               0         
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: raw_actions (Dense)          (None, 2)                 514       
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: =================================================================
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: Total params: 67,586
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: Trainable params: 67,586
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: Non-trainable params: 0
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -     INFO :: Initialising Target DQNetwork
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: Model Summery:
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: Layer (type)                 Output Shape              Param #   
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: =================================================================
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: states (InputLayer)          (None, 4)                 0         
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: dense_3 (Dense)              (None, 256)               1280      
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: activation_3 (Activation)    (None, 256)               0         
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: dropout_3 (Dropout)          (None, 256)               0         
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: dense_4 (Dense)              (None, 256)               65792     
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: activation_4 (Activation)    (None, 256)               0         
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: dropout_4 (Dropout)          (None, 256)               0         
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: raw_actions (Dense)          (None, 2)                 514       
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: =================================================================
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: Total params: 67,586
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: Trainable params: 67,586
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: Non-trainable params: 0
+18-19-2018 21:19:42 IST -   MAIN -    DEBUG :: _________________________________________________________________
+18-19-2018 21:19:42 IST -   MAIN -     INFO :: Starting model training for 2000 episodes.
+18-19-2018 21:19:43 IST -   MAIN -    DEBUG :: Episode 1	Average Score: 17.00	Score: 17.00	State: -0.14961798087408576	Mean Q-Target: 0.0000	Effective Epsilon: 0.9	Time Taken: 0.63 sec
+18-19-2018 21:19:43 IST -   MAIN -    DEBUG :: Episode 2	Average Score: 14.00	Score: 11.00	State: -0.14878052273053965	Mean Q-Target: 0.0000	Effective Epsilon: 0.81	Time Taken: 0.01 sec
+18-19-2018 21:19:45 IST -   MAIN -    DEBUG :: Episode 3	Average Score: 23.00	Score: 41.00	State: -0.17787605688785102	Mean Q-Target: 0.9777	Effective Epsilon: 0.7290000000000001	Time Taken: 1.95 sec
+18-19-2018 21:19:49 IST -   MAIN -    DEBUG :: Episode 4	Average Score: 20.75	Score: 14.00	State: -0.04549839292825403	Mean Q-Target: 1.9583	Effective Epsilon: 0.6561000000000001	Time Taken: 4.39 sec
+18-19-2018 21:19:54 IST -   MAIN -    DEBUG :: Episode 5	Average Score: 20.00	Score: 17.00	State: 0.13624747355652844	Mean Q-Target: 2.6742	Effective Epsilon: 0.5904900000000002	Time Taken: 5.30 sec
+18-20-2018 21:20:12 IST -   MAIN -    DEBUG :: Episode 6	Average Score: 25.83	Score: 55.00	State: 0.7962677608584711	Mean Q-Target: 3.5595	Effective Epsilon: 0.5314410000000002	Time Taken: 17.23 sec
+18-20-2018 21:20:17 IST -   MAIN -    DEBUG :: Episode 7	Average Score: 24.57	Score: 17.00	State: 0.16342076903415567	Mean Q-Target: 4.8057	Effective Epsilon: 0.47829690000000014	Time Taken: 5.40 sec
+18-20-2018 21:20:20 IST -   MAIN -    DEBUG :: Episode 8	Average Score: 22.62	Score: 9.00	State: 0.17382998992030296	Mean Q-Target: 5.4446	Effective Epsilon: 0.43046721000000016	Time Taken: 2.83 sec
+18-20-2018 21:20:23 IST -   MAIN -    DEBUG :: Episode 9	Average Score: 21.11	Score: 9.00	State: 0.1721566855638064	Mean Q-Target: 7.8395	Effective Epsilon: 0.38742048900000015	Time Taken: 2.77 sec
+18-20-2018 21:20:28 IST -   MAIN -    DEBUG :: Episode 10	Average Score: 20.60	Score: 16.00	State: 0.1987272424673608	Mean Q-Target: 8.9222	Effective Epsilon: 0.34867844010000015	Time Taken: 4.99 sec
+18-20-2018 21:20:31 IST -   MAIN -    DEBUG :: Episode 11	Average Score: 19.73	Score: 11.00	State: 0.1536831483470069	Mean Q-Target: 8.7844	Effective Epsilon: 0.31381059609000017	Time Taken: 3.46 sec
+18-20-2018 21:20:34 IST -   MAIN -    DEBUG :: Episode 12	Average Score: 18.83	Score: 9.00	State: 0.1607100669558355	Mean Q-Target: 8.9518	Effective Epsilon: 0.28242953648100017	Time Taken: 2.83 sec
+18-21-2018 21:21:31 IST -   MAIN -    DEBUG :: Episode 13	Average Score: 31.46	Score: 183.00	State: 1.051723003777182	Mean Q-Target: 12.9429	Effective Epsilon: 0.25418658283290013	Time Taken: 57.28 sec
+18-22-2018 21:22:15 IST -   MAIN -    DEBUG :: Episode 14	Average Score: 39.29	Score: 141.00	State: -1.0643387035348888	Mean Q-Target: 14.4285	Effective Epsilon: 0.22876792454961012	Time Taken: 44.19 sec
+18-23-2018 21:23:03 IST -   MAIN -    DEBUG :: Episode 15	Average Score: 46.67	Score: 150.00	State: 0.8313228863043634	Mean Q-Target: 14.7237	Effective Epsilon: 0.2058911320946491	Time Taken: 47.04 sec
+18-23-2018 21:23:31 IST -   MAIN -    DEBUG :: Episode 16	Average Score: 49.44	Score: 91.00	State: 0.6628265199880888	Mean Q-Target: 14.2078	Effective Epsilon: 0.1853020188851842	Time Taken: 28.56 sec
+18-24-2018 21:24:07 IST -   MAIN -    DEBUG :: Episode 17	Average Score: 53.29	Score: 115.00	State: 0.7936436118618405	Mean Q-Target: 16.7119	Effective Epsilon: 0.16677181699666577	Time Taken: 36.04 sec
+18-25-2018 21:25:10 IST -   MAIN -    DEBUG :: Episode 18	Average Score: 61.44	Score: 200.00	State: -1.7217889176121273	Mean Q-Target: 16.4397	Effective Epsilon: 0.1500946352969992	Time Taken: 62.80 sec
+18-25-2018 21:25:33 IST -   MAIN -    DEBUG :: Episode 19	Average Score: 62.11	Score: 74.00	State: -0.33201601674217596	Mean Q-Target: 16.6898	Effective Epsilon: 0.13508517176729928	Time Taken: 23.33 sec
+18-25-2018 21:25:41 IST -   MAIN -    DEBUG :: Episode 20	Average Score: 60.30	Score: 26.00	State: -0.08511311770441363	Mean Q-Target: 18.5299	Effective Epsilon: 0.12157665459056936	Time Taken: 8.21 sec
+18-26-2018 21:26:30 IST -   MAIN -    DEBUG :: Episode 21	Average Score: 64.81	Score: 155.00	State: -2.1420686720244113	Mean Q-Target: 19.4315	Effective Epsilon: 0.10941898913151243	Time Taken: 48.73 sec
+18-27-2018 21:27:21 IST -   MAIN -    DEBUG :: Episode 22	Average Score: 69.23	Score: 162.00	State: -2.012947101910322	Mean Q-Target: 20.6180	Effective Epsilon: 0.0984770902183612	Time Taken: 50.98 sec
+18-28-2018 21:28:24 IST -   MAIN -    DEBUG :: Episode 23	Average Score: 74.91	Score: 200.00	State: -0.579872502595824	Mean Q-Target: 21.7657	Effective Epsilon: 0.08862938119652508	Time Taken: 62.84 sec
+18-29-2018 21:29:27 IST -   MAIN -    DEBUG :: Episode 24	Average Score: 80.12	Score: 200.00	State: -1.0187362946058203	Mean Q-Target: 23.0774	Effective Epsilon: 0.07976644307687257	Time Taken: 62.84 sec
+18-30-2018 21:30:30 IST -   MAIN -    DEBUG :: Episode 25	Average Score: 84.92	Score: 200.00	State: -1.3119136217612044	Mean Q-Target: 21.7861	Effective Epsilon: 0.07178979876918531	Time Taken: 63.01 sec
+18-31-2018 21:31:33 IST -   MAIN -    DEBUG :: Episode 26	Average Score: 89.35	Score: 200.00	State: -0.43808813583664086	Mean Q-Target: 16.8267	Effective Epsilon: 0.06461081889226679	Time Taken: 62.93 sec
+18-32-2018 21:32:36 IST -   MAIN -    DEBUG :: Episode 27	Average Score: 93.44	Score: 200.00	State: 0.33041941879114306	Mean Q-Target: 23.8689	Effective Epsilon: 0.05814973700304011	Time Taken: 63.07 sec
+18-33-2018 21:33:38 IST -   MAIN -    DEBUG :: Episode 28	Average Score: 97.18	Score: 198.00	State: -2.433223730790277	Mean Q-Target: 8.4743	Effective Epsilon: 0.0523347633027361	Time Taken: 62.25 sec
+18-34-2018 21:34:41 IST -   MAIN -    DEBUG :: Episode 29	Average Score: 100.72	Score: 200.00	State: -1.8592516575860043	Mean Q-Target: 21.2984	Effective Epsilon: 0.04710128697246249	Time Taken: 62.98 sec
+18-35-2018 21:35:44 IST -   MAIN -    DEBUG :: Episode 30	Average Score: 104.03	Score: 200.00	State: -0.04192396105495475	Mean Q-Target: 26.7565	Effective Epsilon: 0.042391158275216244	Time Taken: 63.04 sec
+18-36-2018 21:36:47 IST -   MAIN -    DEBUG :: Episode 31	Average Score: 107.13	Score: 200.00	State: 1.9701452951515188	Mean Q-Target: 23.5341	Effective Epsilon: 0.03815204244769462	Time Taken: 62.95 sec
+18-37-2018 21:37:50 IST -   MAIN -    DEBUG :: Episode 32	Average Score: 110.03	Score: 200.00	State: 1.0433866739174829	Mean Q-Target: 29.1164	Effective Epsilon: 0.03433683820292516	Time Taken: 63.02 sec
+18-38-2018 21:38:53 IST -   MAIN -    DEBUG :: Episode 33	Average Score: 112.76	Score: 200.00	State: 0.6401423496914541	Mean Q-Target: 29.4494	Effective Epsilon: 0.030903154382632643	Time Taken: 63.01 sec
+18-39-2018 21:39:45 IST -   MAIN -    DEBUG :: Episode 34	Average Score: 114.32	Score: 166.00	State: -2.4226976815511647	Mean Q-Target: 30.9329	Effective Epsilon: 0.02781283894436938	Time Taken: 52.24 sec
+18-40-2018 21:40:32 IST -   MAIN -    DEBUG :: Episode 35	Average Score: 115.31	Score: 149.00	State: -2.4256225772301026	Mean Q-Target: 31.5740	Effective Epsilon: 0.025031555049932444	Time Taken: 46.91 sec
+18-41-2018 21:41:26 IST -   MAIN -    DEBUG :: Episode 36	Average Score: 116.86	Score: 171.00	State: -2.416730232724208	Mean Q-Target: 32.3818	Effective Epsilon: 0.0225283995449392	Time Taken: 53.99 sec
+18-42-2018 21:42:29 IST -   MAIN -    DEBUG :: Episode 37	Average Score: 119.11	Score: 200.00	State: -2.2241014807188173	Mean Q-Target: 31.3636	Effective Epsilon: 0.020275559590445278	Time Taken: 63.01 sec
+18-43-2018 21:43:32 IST -   MAIN -    DEBUG :: Episode 38	Average Score: 121.24	Score: 200.00	State: -1.8976339765163128	Mean Q-Target: 33.6918	Effective Epsilon: 0.01824800363140075	Time Taken: 63.10 sec
+18-44-2018 21:44:35 IST -   MAIN -    DEBUG :: Episode 39	Average Score: 123.26	Score: 200.00	State: -1.3768572206719487	Mean Q-Target: 31.6126	Effective Epsilon: 0.016423203268260675	Time Taken: 63.02 sec
+18-45-2018 21:45:38 IST -   MAIN -    DEBUG :: Episode 40	Average Score: 125.17	Score: 200.00	State: 0.41541775150601334	Mean Q-Target: 35.2597	Effective Epsilon: 0.014780882941434608	Time Taken: 63.04 sec
+18-46-2018 21:46:41 IST -   MAIN -    DEBUG :: Episode 41	Average Score: 127.00	Score: 200.00	State: 1.9864689558250825	Mean Q-Target: 35.2065	Effective Epsilon: 0.013302794647291147	Time Taken: 63.00 sec
+18-47-2018 21:47:44 IST -   MAIN -    DEBUG :: Episode 42	Average Score: 128.74	Score: 200.00	State: -1.0513280561345089	Mean Q-Target: 37.1226	Effective Epsilon: 0.011972515182562033	Time Taken: 62.93 sec
+18-48-2018 21:48:47 IST -   MAIN -    DEBUG :: Episode 43	Average Score: 130.40	Score: 200.00	State: 1.87392655162859	Mean Q-Target: 35.7903	Effective Epsilon: 0.01077526366430583	Time Taken: 63.04 sec
+18-49-2018 21:49:50 IST -   MAIN -    DEBUG :: Episode 44	Average Score: 131.98	Score: 200.00	State: 2.1592078917828688	Mean Q-Target: 35.9900	Effective Epsilon: 0.009697737297875247	Time Taken: 62.98 sec
+18-50-2018 21:50:53 IST -   MAIN -    DEBUG :: Episode 45	Average Score: 133.49	Score: 200.00	State: 1.3223662363819357	Mean Q-Target: 38.6985	Effective Epsilon: 0.008727963568087723	Time Taken: 62.99 sec
+18-51-2018 21:51:56 IST -   MAIN -    DEBUG :: Episode 46	Average Score: 134.93	Score: 200.00	State: 1.895088052275222	Mean Q-Target: 38.8860	Effective Epsilon: 0.00785516721127895	Time Taken: 63.07 sec
+18-53-2018 21:53:00 IST -   MAIN -    DEBUG :: Episode 47	Average Score: 136.32	Score: 200.00	State: 1.4807316503456767	Mean Q-Target: 38.4920	Effective Epsilon: 0.007069650490151055	Time Taken: 63.09 sec
+18-54-2018 21:54:03 IST -   MAIN -    DEBUG :: Episode 48	Average Score: 137.65	Score: 200.00	State: 0.8237920186656209	Mean Q-Target: 38.6531	Effective Epsilon: 0.00636268544113595	Time Taken: 63.08 sec
+18-55-2018 21:55:06 IST -   MAIN -    DEBUG :: Episode 49	Average Score: 138.92	Score: 200.00	State: 1.5765348710855487	Mean Q-Target: 36.7054	Effective Epsilon: 0.005726416897022355	Time Taken: 63.09 sec
+18-56-2018 21:56:09 IST -   MAIN -    DEBUG :: Episode 50	Average Score: 140.14	Score: 200.00	State: 0.8971868390705541	Mean Q-Target: 30.3350	Effective Epsilon: 0.00515377520732012	Time Taken: 63.06 sec
+18-57-2018 21:57:12 IST -   MAIN -    DEBUG :: Episode 51	Average Score: 141.31	Score: 200.00	State: 2.0974905411720894	Mean Q-Target: 44.9051	Effective Epsilon: 0.004638397686588107	Time Taken: 62.85 sec
+18-58-2018 21:58:15 IST -   MAIN -    DEBUG :: Episode 52	Average Score: 142.44	Score: 200.00	State: -2.127863451573873	Mean Q-Target: 45.0642	Effective Epsilon: 0.0041745579179292966	Time Taken: 63.15 sec
+18-59-2018 21:59:15 IST -   MAIN -    DEBUG :: Episode 53	Average Score: 143.36	Score: 191.00	State: -2.4126946426361964	Mean Q-Target: 44.3274	Effective Epsilon: 0.003757102126136367	Time Taken: 60.22 sec
+18-00-2018 22:00:18 IST -   MAIN -    DEBUG :: Episode 54	Average Score: 144.41	Score: 200.00	State: 1.203630862715701	Mean Q-Target: 45.4919	Effective Epsilon: 0.00338139191352273	Time Taken: 63.15 sec
+18-01-2018 22:01:15 IST -   MAIN -    DEBUG :: Episode 55	Average Score: 145.09	Score: 182.00	State: 2.4088672117269585	Mean Q-Target: 45.3267	Effective Epsilon: 0.0030432527221704573	Time Taken: 57.33 sec
+18-02-2018 22:02:08 IST -   MAIN -    DEBUG :: Episode 56	Average Score: 145.46	Score: 166.00	State: 2.4107020755196484	Mean Q-Target: 46.0762	Effective Epsilon: 0.0027389274499534117	Time Taken: 52.35 sec
+18-03-2018 22:03:09 IST -   MAIN -    DEBUG :: Episode 57	Average Score: 146.33	Score: 195.00	State: 2.411664923534406	Mean Q-Target: 47.0848	Effective Epsilon: 0.0024650347049580707	Time Taken: 61.52 sec
+18-04-2018 22:04:03 IST -   MAIN -    DEBUG :: Episode 58	Average Score: 146.72	Score: 169.00	State: 2.4079962188346427	Mean Q-Target: 46.3965	Effective Epsilon: 0.0022185312344622636	Time Taken: 53.23 sec
+18-04-2018 22:04:59 IST -   MAIN -    DEBUG :: Episode 59	Average Score: 147.25	Score: 178.00	State: 2.425474454060396	Mean Q-Target: 41.4631	Effective Epsilon: 0.001996678111016037	Time Taken: 56.04 sec
+18-05-2018 22:05:52 IST -   MAIN -    DEBUG :: Episode 60	Average Score: 147.60	Score: 168.00	State: 2.4240690495509423	Mean Q-Target: 49.7970	Effective Epsilon: 0.0017970102999144335	Time Taken: 52.96 sec
+18-06-2018 22:06:55 IST -   MAIN -    DEBUG :: Episode 61	Average Score: 148.46	Score: 200.00	State: 2.3600125277345194	Mean Q-Target: 48.5194	Effective Epsilon: 0.0016173092699229901	Time Taken: 63.02 sec
+18-07-2018 22:07:58 IST -   MAIN -    DEBUG :: Episode 62	Average Score: 149.29	Score: 200.00	State: 1.4811460035879016	Mean Q-Target: 50.6008	Effective Epsilon: 0.0014555783429306911	Time Taken: 63.13 sec
+18-09-2018 22:09:01 IST -   MAIN -    DEBUG :: Episode 63	Average Score: 150.10	Score: 200.00	State: 2.1560916050788257	Mean Q-Target: 50.4326	Effective Epsilon: 0.001310020508637622	Time Taken: 63.08 sec
+18-09-2018 22:09:49 IST -   MAIN -    DEBUG :: Episode 64	Average Score: 150.14	Score: 153.00	State: -2.4022598539851336	Mean Q-Target: 51.9088	Effective Epsilon: 0.0011790184577738598	Time Taken: 48.21 sec
+18-10-2018 22:10:36 IST -   MAIN -    DEBUG :: Episode 65	Average Score: 150.11	Score: 148.00	State: -2.4347620722695344	Mean Q-Target: 47.8032	Effective Epsilon: 0.0010611166119964739	Time Taken: 46.68 sec
+18-11-2018 22:11:22 IST -   MAIN -    DEBUG :: Episode 66	Average Score: 150.06	Score: 147.00	State: -2.43023624880789	Mean Q-Target: 47.6891	Effective Epsilon: 0.001	Time Taken: 46.31 sec
+18-12-2018 22:12:02 IST -   MAIN -    DEBUG :: Episode 67	Average Score: 149.73	Score: 128.00	State: -2.4165333099832016	Mean Q-Target: 40.0994	Effective Epsilon: 0.001	Time Taken: 40.31 sec
+18-12-2018 22:12:49 IST -   MAIN -    DEBUG :: Episode 68	Average Score: 149.69	Score: 147.00	State: -2.4108234410303795	Mean Q-Target: 45.0347	Effective Epsilon: 0.001	Time Taken: 46.34 sec
+18-13-2018 22:13:46 IST -   MAIN -    DEBUG :: Episode 69	Average Score: 150.14	Score: 181.00	State: 2.412446779629318	Mean Q-Target: 41.5863	Effective Epsilon: 0.001	Time Taken: 57.18 sec
+18-14-2018 22:14:35 IST -   MAIN -    DEBUG :: Episode 70	Average Score: 150.24	Score: 157.00	State: 2.40740668430778	Mean Q-Target: 41.4526	Effective Epsilon: 0.001	Time Taken: 49.57 sec
+18-15-2018 22:15:27 IST -   MAIN -    DEBUG :: Episode 71	Average Score: 150.42	Score: 163.00	State: 2.4189210164042634	Mean Q-Target: 46.3719	Effective Epsilon: 0.001	Time Taken: 51.23 sec
+18-16-2018 22:16:25 IST -   MAIN -    DEBUG :: Episode 72	Average Score: 150.92	Score: 186.00	State: 2.420369540934882	Mean Q-Target: 58.5889	Effective Epsilon: 0.001	Time Taken: 58.81 sec
+18-17-2018 22:17:18 IST -   MAIN -    DEBUG :: Episode 73	Average Score: 151.14	Score: 167.00	State: 2.408000874811699	Mean Q-Target: 55.0084	Effective Epsilon: 0.001	Time Taken: 52.67 sec
+18-18-2018 22:18:15 IST -   MAIN -    DEBUG :: Episode 74	Average Score: 151.55	Score: 182.00	State: 2.4171957701186844	Mean Q-Target: 49.6995	Effective Epsilon: 0.001	Time Taken: 57.35 sec
+18-18-2018 22:18:56 IST -   MAIN -    DEBUG :: Episode 75	Average Score: 151.24	Score: 128.00	State: -2.4013579129637597	Mean Q-Target: 55.8914	Effective Epsilon: 0.001	Time Taken: 40.43 sec
+18-19-2018 22:19:38 IST -   MAIN -    DEBUG :: Episode 76	Average Score: 151.00	Score: 133.00	State: -2.4209209595400005	Mean Q-Target: 57.1728	Effective Epsilon: 0.001	Time Taken: 41.96 sec
+18-20-2018 22:20:40 IST -   MAIN -    DEBUG :: Episode 77	Average Score: 151.58	Score: 196.00	State: 2.401155943822698	Mean Q-Target: 61.0232	Effective Epsilon: 0.001	Time Taken: 61.80 sec
+18-21-2018 22:21:33 IST -   MAIN -    DEBUG :: Episode 78	Average Score: 151.82	Score: 170.00	State: 2.4044401815766525	Mean Q-Target: 60.7242	Effective Epsilon: 0.001	Time Taken: 53.63 sec
+18-22-2018 22:22:29 IST -   MAIN -    DEBUG :: Episode 79	Average Score: 152.15	Score: 178.00	State: 2.414779790305318	Mean Q-Target: 60.8195	Effective Epsilon: 0.001	Time Taken: 56.16 sec
+18-23-2018 22:23:33 IST -   MAIN -    DEBUG :: Episode 80	Average Score: 152.75	Score: 200.00	State: 1.9737447670257449	Mean Q-Target: 59.1019	Effective Epsilon: 0.001	Time Taken: 63.18 sec
+18-24-2018 22:24:36 IST -   MAIN -    DEBUG :: Episode 81	Average Score: 153.33	Score: 200.00	State: 2.3304486198091077	Mean Q-Target: 44.3153	Effective Epsilon: 0.001	Time Taken: 63.38 sec
+18-25-2018 22:25:34 IST -   MAIN -    DEBUG :: Episode 82	Average Score: 153.68	Score: 182.00	State: 2.414146011669636	Mean Q-Target: 62.6336	Effective Epsilon: 0.001	Time Taken: 57.54 sec
+18-26-2018 22:26:25 IST -   MAIN -    DEBUG :: Episode 83	Average Score: 153.78	Score: 162.00	State: 2.4134790856804145	Mean Q-Target: 40.9254	Effective Epsilon: 0.001	Time Taken: 51.27 sec
+18-27-2018 22:27:12 IST -   MAIN -    DEBUG :: Episode 84	Average Score: 153.73	Score: 149.00	State: 2.4053883163920906	Mean Q-Target: 61.3002	Effective Epsilon: 0.001	Time Taken: 47.15 sec
+18-28-2018 22:28:02 IST -   MAIN -    DEBUG :: Episode 85	Average Score: 153.79	Score: 159.00	State: 2.4169271875528238	Mean Q-Target: 64.3704	Effective Epsilon: 0.001	Time Taken: 50.28 sec
+18-28-2018 22:28:54 IST -   MAIN -    DEBUG :: Episode 86	Average Score: 153.90	Score: 163.00	State: 2.410020865778795	Mean Q-Target: 50.4988	Effective Epsilon: 0.001	Time Taken: 51.64 sec
+18-29-2018 22:29:50 IST -   MAIN -    DEBUG :: Episode 87	Average Score: 154.17	Score: 178.00	State: 2.4137008405598506	Mean Q-Target: 59.8534	Effective Epsilon: 0.001	Time Taken: 56.40 sec
+18-30-2018 22:30:53 IST -   MAIN -    DEBUG :: Episode 88	Average Score: 154.69	Score: 200.00	State: 1.7582308871917414	Mean Q-Target: 32.9348	Effective Epsilon: 0.001	Time Taken: 63.19 sec
+18-31-2018 22:31:57 IST -   MAIN -    DEBUG :: Episode 89	Average Score: 155.20	Score: 200.00	State: 1.7980368998224219	Mean Q-Target: 42.2352	Effective Epsilon: 0.001	Time Taken: 63.15 sec
+18-33-2018 22:33:00 IST -   MAIN -    DEBUG :: Episode 90	Average Score: 155.70	Score: 200.00	State: 1.8928037593576779	Mean Q-Target: 61.9828	Effective Epsilon: 0.001	Time Taken: 63.30 sec
+18-34-2018 22:34:03 IST -   MAIN -    DEBUG :: Episode 91	Average Score: 156.19	Score: 200.00	State: 1.8591229265431124	Mean Q-Target: 54.3895	Effective Epsilon: 0.001	Time Taken: 63.20 sec
+18-35-2018 22:35:06 IST -   MAIN -    DEBUG :: Episode 92	Average Score: 156.66	Score: 200.00	State: 1.6426232452479597	Mean Q-Target: 34.1975	Effective Epsilon: 0.001	Time Taken: 63.24 sec
+18-36-2018 22:36:05 IST -   MAIN -    DEBUG :: Episode 93	Average Score: 156.98	Score: 186.00	State: 2.4140079910817316	Mean Q-Target: 65.7753	Effective Epsilon: 0.001	Time Taken: 58.75 sec
+18-37-2018 22:37:08 IST -   MAIN -    DEBUG :: Episode 94	Average Score: 157.44	Score: 200.00	State: 1.9722428503423992	Mean Q-Target: 38.2818	Effective Epsilon: 0.001	Time Taken: 63.33 sec
+18-38-2018 22:38:01 IST -   MAIN -    DEBUG :: Episode 95	Average Score: 157.54	Score: 167.00	State: 2.4204985797745833	Mean Q-Target: 63.3886	Effective Epsilon: 0.001	Time Taken: 52.87 sec
+18-38-2018 22:38:44 IST -   MAIN -    DEBUG :: Episode 96	Average Score: 157.30	Score: 135.00	State: 2.4110482529078987	Mean Q-Target: 70.5106	Effective Epsilon: 0.001	Time Taken: 42.70 sec
+18-39-2018 22:39:33 IST -   MAIN -    DEBUG :: Episode 97	Average Score: 157.27	Score: 154.00	State: 2.404919753846905	Mean Q-Target: 55.6968	Effective Epsilon: 0.001	Time Taken: 48.67 sec
+18-40-2018 22:40:27 IST -   MAIN -    DEBUG :: Episode 98	Average Score: 157.43	Score: 173.00	State: 2.4118432418322726	Mean Q-Target: 69.6255	Effective Epsilon: 0.001	Time Taken: 54.64 sec
+18-41-2018 22:41:31 IST -   MAIN -    DEBUG :: Episode 99	Average Score: 157.86	Score: 200.00	State: 2.1158718731939263	Mean Q-Target: 66.3582	Effective Epsilon: 0.001	Time Taken: 63.32 sec
+18-42-2018 22:42:18 IST -   MAIN -    DEBUG :: Episode 100	Average Score: 157.79	Score: 151.00	State: 2.4057616931205845	Mean Q-Target: 44.7463	Effective Epsilon: 0.001	Time Taken: 47.84 sec
+18-42-2018 22:42:18 IST - RESULT -     INFO :: Episode 100	Average Score: 157.79	Score: 151.00	State: 2.4057616931205845	Mean Q-Target: 44.7463	Time Taken: 47.84 sec 
+18-43-2018 22:43:11 IST -   MAIN -    DEBUG :: Episode 101	Average Score: 159.28	Score: 166.00	State: -2.4358459563716752	Mean Q-Target: 47.8851	Effective Epsilon: 0.001	Time Taken: 52.55 sec
+18-43-2018 22:43:58 IST -   MAIN -    DEBUG :: Episode 102	Average Score: 160.64	Score: 147.00	State: -2.4355720553587794	Mean Q-Target: 68.3650	Effective Epsilon: 0.001	Time Taken: 46.56 sec
+18-45-2018 22:45:01 IST -   MAIN -    DEBUG :: Episode 103	Average Score: 162.23	Score: 200.00	State: 1.5844403321757652	Mean Q-Target: 29.0065	Effective Epsilon: 0.001	Time Taken: 63.32 sec
+18-45-2018 22:45:38 IST -   MAIN -    DEBUG :: Episode 104	Average Score: 163.27	Score: 118.00	State: -2.4106322283432986	Mean Q-Target: 71.4211	Effective Epsilon: 0.001	Time Taken: 37.34 sec
+18-46-2018 22:46:42 IST -   MAIN -    DEBUG :: Episode 105	Average Score: 165.10	Score: 200.00	State: 0.45759566431367366	Mean Q-Target: 70.6525	Effective Epsilon: 0.001	Time Taken: 63.17 sec
+18-47-2018 22:47:24 IST -   MAIN -    DEBUG :: Episode 106	Average Score: 165.90	Score: 135.00	State: -2.411577027550059	Mean Q-Target: 7.9684	Effective Epsilon: 0.001	Time Taken: 42.58 sec
+18-48-2018 22:48:28 IST -   MAIN -    DEBUG :: Episode 107	Average Score: 167.73	Score: 200.00	State: 0.033922928980508596	Mean Q-Target: 32.4700	Effective Epsilon: 0.001	Time Taken: 63.44 sec
+18-49-2018 22:49:09 IST -   MAIN -    DEBUG :: Episode 108	Average Score: 168.96	Score: 132.00	State: -2.4253899154286245	Mean Q-Target: 54.3849	Effective Epsilon: 0.001	Time Taken: 41.76 sec
+18-50-2018 22:50:13 IST -   MAIN -    DEBUG :: Episode 109	Average Score: 170.87	Score: 200.00	State: 0.687180441325447	Mean Q-Target: 74.9426	Effective Epsilon: 0.001	Time Taken: 63.31 sec
+18-51-2018 22:51:09 IST -   MAIN -    DEBUG :: Episode 110	Average Score: 172.49	Score: 178.00	State: -2.414157596845924	Mean Q-Target: 73.3655	Effective Epsilon: 0.001	Time Taken: 56.28 sec
+18-51-2018 22:51:56 IST -   MAIN -    DEBUG :: Episode 111	Average Score: 173.87	Score: 149.00	State: -2.4193758119608844	Mean Q-Target: 56.8735	Effective Epsilon: 0.001	Time Taken: 47.21 sec
+18-52-2018 22:52:40 IST -   MAIN -    DEBUG :: Episode 112	Average Score: 175.17	Score: 139.00	State: -2.4128405871492853	Mean Q-Target: 71.9781	Effective Epsilon: 0.001	Time Taken: 43.87 sec
+18-53-2018 22:53:38 IST -   MAIN -    DEBUG :: Episode 113	Average Score: 175.17	Score: 183.00	State: 2.413220149983848	Mean Q-Target: 63.3407	Effective Epsilon: 0.001	Time Taken: 57.89 sec
+18-54-2018 22:54:22 IST -   MAIN -    DEBUG :: Episode 114	Average Score: 175.14	Score: 138.00	State: 2.4165986590008677	Mean Q-Target: 71.6331	Effective Epsilon: 0.001	Time Taken: 43.73 sec
+18-55-2018 22:55:15 IST -   MAIN -    DEBUG :: Episode 115	Average Score: 175.34	Score: 170.00	State: -2.4065536768803892	Mean Q-Target: 53.9318	Effective Epsilon: 0.001	Time Taken: 53.80 sec
+18-56-2018 22:56:19 IST -   MAIN -    DEBUG :: Episode 116	Average Score: 176.43	Score: 200.00	State: 2.2821671681072466	Mean Q-Target: 75.3516	Effective Epsilon: 0.001	Time Taken: 63.27 sec
+18-57-2018 22:57:12 IST -   MAIN -    DEBUG :: Episode 117	Average Score: 176.98	Score: 170.00	State: 2.4232569054248576	Mean Q-Target: 70.2296	Effective Epsilon: 0.001	Time Taken: 53.65 sec
+18-57-2018 22:57:49 IST -   MAIN -    DEBUG :: Episode 118	Average Score: 176.14	Score: 116.00	State: -2.4446093854683753	Mean Q-Target: 70.4163	Effective Epsilon: 0.001	Time Taken: 36.78 sec
+18-58-2018 22:58:27 IST -   MAIN -    DEBUG :: Episode 119	Average Score: 176.61	Score: 121.00	State: -2.413292015135966	Mean Q-Target: 70.6222	Effective Epsilon: 0.001	Time Taken: 38.29 sec
+18-59-2018 22:59:31 IST -   MAIN -    DEBUG :: Episode 120	Average Score: 178.35	Score: 200.00	State: 0.9782590614243807	Mean Q-Target: 69.8582	Effective Epsilon: 0.001	Time Taken: 63.29 sec
+18-00-2018 23:00:18 IST -   MAIN -    DEBUG :: Episode 121	Average Score: 178.30	Score: 150.00	State: -2.4020624579746963	Mean Q-Target: 57.6499	Effective Epsilon: 0.001	Time Taken: 47.54 sec
+18-01-2018 23:01:06 IST -   MAIN -    DEBUG :: Episode 122	Average Score: 178.19	Score: 151.00	State: -2.4209744013411236	Mean Q-Target: 77.8854	Effective Epsilon: 0.001	Time Taken: 47.69 sec
+18-01-2018 23:01:58 IST -   MAIN -    DEBUG :: Episode 123	Average Score: 177.82	Score: 163.00	State: 2.4027129750166183	Mean Q-Target: 75.8645	Effective Epsilon: 0.001	Time Taken: 52.07 sec
+18-03-2018 23:03:01 IST -   MAIN -    DEBUG :: Episode 124	Average Score: 177.82	Score: 200.00	State: 1.011460628044606	Mean Q-Target: 78.1101	Effective Epsilon: 0.001	Time Taken: 63.48 sec
+18-04-2018 23:04:05 IST -   MAIN -    DEBUG :: Episode 125	Average Score: 177.82	Score: 200.00	State: 0.024992977969738872	Mean Q-Target: 71.8756	Effective Epsilon: 0.001	Time Taken: 63.30 sec
+18-05-2018 23:05:08 IST -   MAIN -    DEBUG :: Episode 126	Average Score: 177.82	Score: 200.00	State: 0.2585960710741376	Mean Q-Target: 55.2434	Effective Epsilon: 0.001	Time Taken: 63.33 sec
+18-06-2018 23:06:11 IST -   MAIN -    DEBUG :: Episode 127	Average Score: 177.82	Score: 200.00	State: 1.3728600507939517	Mean Q-Target: 72.3705	Effective Epsilon: 0.001	Time Taken: 63.28 sec
+18-07-2018 23:07:15 IST -   MAIN -    DEBUG :: Episode 128	Average Score: 177.84	Score: 200.00	State: 2.0944824288004464	Mean Q-Target: 80.0463	Effective Epsilon: 0.001	Time Taken: 63.22 sec
+18-08-2018 23:08:18 IST -   MAIN -    DEBUG :: Episode 129	Average Score: 177.84	Score: 200.00	State: 1.0534614180591362	Mean Q-Target: 28.5129	Effective Epsilon: 0.001	Time Taken: 63.33 sec
+18-09-2018 23:09:21 IST -   MAIN -    DEBUG :: Episode 130	Average Score: 177.84	Score: 200.00	State: -0.8886155163204592	Mean Q-Target: 79.5317	Effective Epsilon: 0.001	Time Taken: 63.38 sec
+18-10-2018 23:10:25 IST -   MAIN -    DEBUG :: Episode 131	Average Score: 177.84	Score: 200.00	State: 0.06494054060867038	Mean Q-Target: 52.1506	Effective Epsilon: 0.001	Time Taken: 63.38 sec
+18-11-2018 23:11:28 IST -   MAIN -    DEBUG :: Episode 132	Average Score: 177.84	Score: 200.00	State: 0.018576812915064533	Mean Q-Target: 78.8135	Effective Epsilon: 0.001	Time Taken: 63.18 sec
+18-12-2018 23:12:31 IST -   MAIN -    DEBUG :: Episode 133	Average Score: 177.84	Score: 200.00	State: -0.21108716152052334	Mean Q-Target: 81.3973	Effective Epsilon: 0.001	Time Taken: 63.25 sec
+18-13-2018 23:13:34 IST -   MAIN -    DEBUG :: Episode 134	Average Score: 178.18	Score: 200.00	State: -2.0206769808895553	Mean Q-Target: 81.7656	Effective Epsilon: 0.001	Time Taken: 63.14 sec
+18-14-2018 23:14:15 IST -   MAIN -    DEBUG :: Episode 135	Average Score: 177.98	Score: 129.00	State: -2.4246062223849982	Mean Q-Target: 61.4138	Effective Epsilon: 0.001	Time Taken: 40.85 sec
+18-14-2018 23:14:57 IST -   MAIN -    DEBUG :: Episode 136	Average Score: 177.60	Score: 133.00	State: -2.4274808574706626	Mean Q-Target: 74.9174	Effective Epsilon: 0.001	Time Taken: 42.16 sec
+18-16-2018 23:16:01 IST -   MAIN -    DEBUG :: Episode 137	Average Score: 177.60	Score: 200.00	State: -2.1344794049393903	Mean Q-Target: 69.4044	Effective Epsilon: 0.001	Time Taken: 63.49 sec
+18-16-2018 23:16:52 IST -   MAIN -    DEBUG :: Episode 138	Average Score: 177.22	Score: 162.00	State: -2.4060918183206907	Mean Q-Target: 83.1812	Effective Epsilon: 0.001	Time Taken: 51.26 sec
+18-17-2018 23:17:28 IST -   MAIN -    DEBUG :: Episode 139	Average Score: 176.37	Score: 115.00	State: -2.4274316267669893	Mean Q-Target: 72.5901	Effective Epsilon: 0.001	Time Taken: 36.43 sec
+18-18-2018 23:18:05 IST -   MAIN -    DEBUG :: Episode 140	Average Score: 175.54	Score: 117.00	State: -2.440551635315967	Mean Q-Target: 58.3865	Effective Epsilon: 0.001	Time Taken: 36.99 sec
+18-18-2018 23:18:44 IST -   MAIN -    DEBUG :: Episode 141	Average Score: 174.74	Score: 120.00	State: -2.42830038970907	Mean Q-Target: 83.7974	Effective Epsilon: 0.001	Time Taken: 38.09 sec
+18-19-2018 23:19:18 IST -   MAIN -    DEBUG :: Episode 142	Average Score: 173.82	Score: 108.00	State: -2.410393677980214	Mean Q-Target: 42.0611	Effective Epsilon: 0.001	Time Taken: 34.09 sec
+18-20-2018 23:20:21 IST -   MAIN -    DEBUG :: Episode 143	Average Score: 173.82	Score: 200.00	State: -1.2629666478471269	Mean Q-Target: 82.3160	Effective Epsilon: 0.001	Time Taken: 63.32 sec
+18-21-2018 23:21:24 IST -   MAIN -    DEBUG :: Episode 144	Average Score: 173.80	Score: 198.00	State: -2.416482279185304	Mean Q-Target: 83.8567	Effective Epsilon: 0.001	Time Taken: 62.66 sec
+18-22-2018 23:22:27 IST -   MAIN -    DEBUG :: Episode 145	Average Score: 173.80	Score: 200.00	State: -1.2824516545762747	Mean Q-Target: 83.0891	Effective Epsilon: 0.001	Time Taken: 63.41 sec
+18-23-2018 23:23:30 IST -   MAIN -    DEBUG :: Episode 146	Average Score: 173.80	Score: 200.00	State: -1.1553024559009675	Mean Q-Target: 36.9761	Effective Epsilon: 0.001	Time Taken: 63.29 sec
+18-24-2018 23:24:34 IST -   MAIN -    DEBUG :: Episode 147	Average Score: 173.80	Score: 200.00	State: -1.0398487066030881	Mean Q-Target: 84.5230	Effective Epsilon: 0.001	Time Taken: 63.33 sec
+18-25-2018 23:25:37 IST -   MAIN -    DEBUG :: Episode 148	Average Score: 173.80	Score: 200.00	State: -0.9334135139739793	Mean Q-Target: 83.8262	Effective Epsilon: 0.001	Time Taken: 63.36 sec
+18-26-2018 23:26:40 IST -   MAIN -    DEBUG :: Episode 149	Average Score: 173.80	Score: 200.00	State: -1.47312692761863	Mean Q-Target: 71.2641	Effective Epsilon: 0.001	Time Taken: 63.42 sec
+18-27-2018 23:27:44 IST -   MAIN -    DEBUG :: Episode 150	Average Score: 173.80	Score: 200.00	State: -0.2678887834912158	Mean Q-Target: 74.7265	Effective Epsilon: 0.001	Time Taken: 63.32 sec
+18-28-2018 23:28:47 IST -   MAIN -    DEBUG :: Episode 151	Average Score: 173.80	Score: 200.00	State: 0.17152190544682297	Mean Q-Target: 53.6719	Effective Epsilon: 0.001	Time Taken: 63.54 sec
+18-29-2018 23:29:51 IST -   MAIN -    DEBUG :: Episode 152	Average Score: 173.80	Score: 200.00	State: -0.21519856430677914	Mean Q-Target: 64.9283	Effective Epsilon: 0.001	Time Taken: 63.37 sec
+18-30-2018 23:30:54 IST -   MAIN -    DEBUG :: Episode 153	Average Score: 173.89	Score: 200.00	State: -0.1499707213146431	Mean Q-Target: 86.8983	Effective Epsilon: 0.001	Time Taken: 63.32 sec
+18-31-2018 23:31:57 IST -   MAIN -    DEBUG :: Episode 154	Average Score: 173.89	Score: 200.00	State: -1.2630253442929902	Mean Q-Target: 86.6169	Effective Epsilon: 0.001	Time Taken: 63.32 sec
+18-33-2018 23:33:01 IST -   MAIN -    DEBUG :: Episode 155	Average Score: 174.07	Score: 200.00	State: -0.8956502195269858	Mean Q-Target: 81.0592	Effective Epsilon: 0.001	Time Taken: 63.38 sec
+18-34-2018 23:34:04 IST -   MAIN -    DEBUG :: Episode 156	Average Score: 174.41	Score: 200.00	State: 0.5252108760308571	Mean Q-Target: 62.3744	Effective Epsilon: 0.001	Time Taken: 63.33 sec
+18-34-2018 23:34:41 IST -   MAIN -    DEBUG :: Episode 157	Average Score: 173.63	Score: 117.00	State: -2.403258006231946	Mean Q-Target: 72.8836	Effective Epsilon: 0.001	Time Taken: 37.09 sec
+18-35-2018 23:35:18 IST -   MAIN -    DEBUG :: Episode 158	Average Score: 173.12	Score: 118.00	State: -2.4123220708974005	Mean Q-Target: 82.8377	Effective Epsilon: 0.001	Time Taken: 37.36 sec
+18-36-2018 23:36:22 IST -   MAIN -    DEBUG :: Episode 159	Average Score: 173.34	Score: 200.00	State: -1.7029486869761425	Mean Q-Target: 85.9160	Effective Epsilon: 0.001	Time Taken: 63.29 sec
+18-37-2018 23:37:26 IST -   MAIN -    DEBUG :: Episode 160	Average Score: 173.66	Score: 200.00	State: -0.690987419413849	Mean Q-Target: 58.7727	Effective Epsilon: 0.001	Time Taken: 64.31 sec
+18-38-2018 23:38:15 IST -   MAIN -    DEBUG :: Episode 161	Average Score: 173.20	Score: 154.00	State: -2.4366278949293028	Mean Q-Target: 87.3769	Effective Epsilon: 0.001	Time Taken: 48.76 sec
+18-39-2018 23:39:18 IST -   MAIN -    DEBUG :: Episode 162	Average Score: 173.20	Score: 200.00	State: -1.6703503583960155	Mean Q-Target: 81.2051	Effective Epsilon: 0.001	Time Taken: 63.29 sec
+18-40-2018 23:40:21 IST -   MAIN -    DEBUG :: Episode 163	Average Score: 173.20	Score: 200.00	State: -2.0303749366474766	Mean Q-Target: 87.2480	Effective Epsilon: 0.001	Time Taken: 63.33 sec
+18-41-2018 23:41:25 IST -   MAIN -    DEBUG :: Episode 164	Average Score: 173.67	Score: 200.00	State: -2.3171928250524125	Mean Q-Target: 10.5207	Effective Epsilon: 0.001	Time Taken: 63.26 sec
+18-42-2018 23:42:28 IST -   MAIN -    DEBUG :: Episode 165	Average Score: 174.19	Score: 200.00	State: -1.8330456871272267	Mean Q-Target: 39.0537	Effective Epsilon: 0.001	Time Taken: 63.45 sec
+18-43-2018 23:43:32 IST -   MAIN -    DEBUG :: Episode 166	Average Score: 174.72	Score: 200.00	State: 0.21282844421563873	Mean Q-Target: 86.7578	Effective Epsilon: 0.001	Time Taken: 63.37 sec
+18-44-2018 23:44:35 IST -   MAIN -    DEBUG :: Episode 167	Average Score: 175.44	Score: 200.00	State: -0.5207682332573292	Mean Q-Target: 87.2526	Effective Epsilon: 0.001	Time Taken: 63.83 sec
+18-45-2018 23:45:24 IST -   MAIN -    DEBUG :: Episode 168	Average Score: 175.51	Score: 154.00	State: 2.4036502726383233	Mean Q-Target: 85.6824	Effective Epsilon: 0.001	Time Taken: 48.83 sec
+18-46-2018 23:46:28 IST -   MAIN -    DEBUG :: Episode 169	Average Score: 175.70	Score: 200.00	State: 2.2537968058611106	Mean Q-Target: 89.1953	Effective Epsilon: 0.001	Time Taken: 63.37 sec
+18-47-2018 23:47:31 IST -   MAIN -    DEBUG :: Episode 170	Average Score: 176.13	Score: 200.00	State: 0.042980812104945566	Mean Q-Target: 87.8079	Effective Epsilon: 0.001	Time Taken: 63.26 sec
+18-48-2018 23:48:34 IST -   MAIN -    DEBUG :: Episode 171	Average Score: 176.50	Score: 200.00	State: -0.0571955777954469	Mean Q-Target: 89.5701	Effective Epsilon: 0.001	Time Taken: 63.34 sec
+18-49-2018 23:49:38 IST -   MAIN -    DEBUG :: Episode 172	Average Score: 176.64	Score: 200.00	State: 0.26517417446461405	Mean Q-Target: 78.2106	Effective Epsilon: 0.001	Time Taken: 63.39 sec
+18-50-2018 23:50:42 IST -   MAIN -    DEBUG :: Episode 173	Average Score: 176.97	Score: 200.00	State: -0.6459180740313257	Mean Q-Target: 16.1615	Effective Epsilon: 0.001	Time Taken: 64.00 sec
+18-51-2018 23:51:45 IST -   MAIN -    DEBUG :: Episode 174	Average Score: 177.15	Score: 200.00	State: -0.31137986499443543	Mean Q-Target: 66.8758	Effective Epsilon: 0.001	Time Taken: 63.34 sec
+18-52-2018 23:52:48 IST -   MAIN -    DEBUG :: Episode 175	Average Score: 177.87	Score: 200.00	State: -0.08511434137906829	Mean Q-Target: 92.2829	Effective Epsilon: 0.001	Time Taken: 63.22 sec
+18-53-2018 23:53:21 IST -   MAIN -    DEBUG :: Episode 176	Average Score: 177.57	Score: 103.00	State: -2.4187915518307603	Mean Q-Target: 79.4098	Effective Epsilon: 0.001	Time Taken: 32.71 sec
+18-54-2018 23:54:24 IST -   MAIN -    DEBUG :: Episode 177	Average Score: 177.61	Score: 200.00	State: -1.4433722271285307	Mean Q-Target: 93.0108	Effective Epsilon: 0.001	Time Taken: 63.33 sec
+18-55-2018 23:55:27 IST -   MAIN -    DEBUG :: Episode 178	Average Score: 177.91	Score: 200.00	State: 1.8604092930570755	Mean Q-Target: 99.5495	Effective Epsilon: 0.001	Time Taken: 63.31 sec
+18-56-2018 23:56:31 IST -   MAIN -    DEBUG :: Episode 179	Average Score: 178.13	Score: 200.00	State: 1.0334362108646344	Mean Q-Target: 86.7652	Effective Epsilon: 0.001	Time Taken: 63.46 sec
+18-57-2018 23:57:34 IST -   MAIN -    DEBUG :: Episode 180	Average Score: 178.13	Score: 200.00	State: 0.8049436442010232	Mean Q-Target: 66.9915	Effective Epsilon: 0.001	Time Taken: 63.54 sec
+18-58-2018 23:58:38 IST -   MAIN -    DEBUG :: Episode 181	Average Score: 178.13	Score: 200.00	State: -0.648512956445684	Mean Q-Target: 93.8130	Effective Epsilon: 0.001	Time Taken: 63.33 sec
+18-59-2018 23:59:41 IST -   MAIN -    DEBUG :: Episode 182	Average Score: 178.31	Score: 200.00	State: 1.0548289245588778	Mean Q-Target: 78.8619	Effective Epsilon: 0.001	Time Taken: 63.30 sec
+19-00-2018 00:00:44 IST -   MAIN -    DEBUG :: Episode 183	Average Score: 178.69	Score: 200.00	State: -0.09545673758478035	Mean Q-Target: 53.8810	Effective Epsilon: 0.001	Time Taken: 63.37 sec
+19-01-2018 00:01:48 IST -   MAIN -    DEBUG :: Episode 184	Average Score: 179.20	Score: 200.00	State: -0.4826089046360469	Mean Q-Target: 65.5213	Effective Epsilon: 0.001	Time Taken: 63.32 sec
+19-02-2018 00:02:51 IST -   MAIN -    DEBUG :: Episode 185	Average Score: 179.61	Score: 200.00	State: 1.2677449384060706	Mean Q-Target: 5.6793	Effective Epsilon: 0.001	Time Taken: 63.29 sec
+19-03-2018 00:03:54 IST -   MAIN -    DEBUG :: Episode 186	Average Score: 179.98	Score: 200.00	State: -1.053590653996642	Mean Q-Target: 29.2410	Effective Epsilon: 0.001	Time Taken: 63.31 sec
+19-04-2018 00:04:59 IST -   MAIN -    DEBUG :: Episode 187	Average Score: 180.20	Score: 200.00	State: -0.9726631735237713	Mean Q-Target: 94.8203	Effective Epsilon: 0.001	Time Taken: 64.18 sec
+19-06-2018 00:06:02 IST -   MAIN -    DEBUG :: Episode 188	Average Score: 180.20	Score: 200.00	State: -0.22930150338962005	Mean Q-Target: 82.5789	Effective Epsilon: 0.001	Time Taken: 63.31 sec
+19-07-2018 00:07:05 IST -   MAIN -    DEBUG :: Episode 189	Average Score: 180.20	Score: 200.00	State: -0.7276782706825168	Mean Q-Target: 46.3864	Effective Epsilon: 0.001	Time Taken: 63.36 sec
+19-08-2018 00:08:09 IST -   MAIN -    DEBUG :: Episode 190	Average Score: 180.20	Score: 200.00	State: -0.8232620625628587	Mean Q-Target: 81.8520	Effective Epsilon: 0.001	Time Taken: 63.28 sec
+19-09-2018 00:09:04 IST -   MAIN -    DEBUG :: Episode 191	Average Score: 179.95	Score: 175.00	State: 2.4041955483523267	Mean Q-Target: 48.0854	Effective Epsilon: 0.001	Time Taken: 55.41 sec
+19-10-2018 00:10:07 IST -   MAIN -    DEBUG :: Episode 192	Average Score: 179.95	Score: 200.00	State: 0.03397234058397125	Mean Q-Target: 98.3581	Effective Epsilon: 0.001	Time Taken: 63.26 sec
+19-11-2018 00:11:11 IST -   MAIN -    DEBUG :: Episode 193	Average Score: 180.09	Score: 200.00	State: -0.7103271269219601	Mean Q-Target: 99.7159	Effective Epsilon: 0.001	Time Taken: 63.75 sec
+19-12-2018 00:12:01 IST -   MAIN -    DEBUG :: Episode 194	Average Score: 179.66	Score: 157.00	State: 2.407957368121235	Mean Q-Target: 94.2853	Effective Epsilon: 0.001	Time Taken: 49.68 sec
+19-13-2018 00:13:04 IST -   MAIN -    DEBUG :: Episode 195	Average Score: 179.99	Score: 200.00	State: -0.4007404706310759	Mean Q-Target: 97.8907	Effective Epsilon: 0.001	Time Taken: 63.28 sec
+19-14-2018 00:14:07 IST -   MAIN -    DEBUG :: Episode 196	Average Score: 180.64	Score: 200.00	State: -0.5758433846422873	Mean Q-Target: 97.3396	Effective Epsilon: 0.001	Time Taken: 63.13 sec
+19-15-2018 00:15:10 IST -   MAIN -    DEBUG :: Episode 197	Average Score: 181.10	Score: 200.00	State: -0.9082676333704559	Mean Q-Target: 66.5213	Effective Epsilon: 0.001	Time Taken: 63.26 sec
+19-16-2018 00:16:13 IST -   MAIN -    DEBUG :: Episode 198	Average Score: 181.37	Score: 200.00	State: -1.638908612365449	Mean Q-Target: 92.6886	Effective Epsilon: 0.001	Time Taken: 63.18 sec
+19-17-2018 00:17:17 IST -   MAIN -    DEBUG :: Episode 199	Average Score: 181.37	Score: 200.00	State: -1.90130121928147	Mean Q-Target: 85.4941	Effective Epsilon: 0.001	Time Taken: 63.33 sec
+19-18-2018 00:18:21 IST -   MAIN -    DEBUG :: Episode 200	Average Score: 181.86	Score: 200.00	State: -1.2177593733710743	Mean Q-Target: 32.6824	Effective Epsilon: 0.001	Time Taken: 64.08 sec
+19-18-2018 00:18:21 IST - RESULT -     INFO :: Episode 200	Average Score: 181.86	Score: 200.00	State: -1.2177593733710743	Mean Q-Target: 32.6824	Time Taken: 64.08 sec 
+19-19-2018 00:19:24 IST -   MAIN -    DEBUG :: Episode 201	Average Score: 182.20	Score: 200.00	State: -0.9159012041459504	Mean Q-Target: 48.3238	Effective Epsilon: 0.001	Time Taken: 63.16 sec
+19-20-2018 00:20:27 IST -   MAIN -    DEBUG :: Episode 202	Average Score: 182.73	Score: 200.00	State: -1.1005494826528137	Mean Q-Target: 99.7635	Effective Epsilon: 0.001	Time Taken: 63.21 sec
+19-21-2018 00:21:31 IST -   MAIN -    DEBUG :: Episode 203	Average Score: 182.73	Score: 200.00	State: -1.0254807879887073	Mean Q-Target: 93.4506	Effective Epsilon: 0.001	Time Taken: 63.39 sec
+19-22-2018 00:22:34 IST -   MAIN -    DEBUG :: Episode 204	Average Score: 183.55	Score: 200.00	State: -0.39552193237194616	Mean Q-Target: 64.8297	Effective Epsilon: 0.001	Time Taken: 63.22 sec
+19-23-2018 00:23:37 IST -   MAIN -    DEBUG :: Episode 205	Average Score: 183.55	Score: 200.00	State: -0.777411464727821	Mean Q-Target: 96.7900	Effective Epsilon: 0.001	Time Taken: 63.39 sec
+19-24-2018 00:24:41 IST -   MAIN -    DEBUG :: Episode 206	Average Score: 184.20	Score: 200.00	State: -0.8493113493991113	Mean Q-Target: 101.0185	Effective Epsilon: 0.001	Time Taken: 63.41 sec
+19-25-2018 00:25:23 IST -   MAIN -    DEBUG :: Episode 207	Average Score: 183.53	Score: 133.00	State: -2.4193940560261304	Mean Q-Target: 83.4022	Effective Epsilon: 0.001	Time Taken: 42.15 sec
+19-26-2018 00:26:26 IST -   MAIN -    DEBUG :: Episode 208	Average Score: 184.21	Score: 200.00	State: -0.22506456486970308	Mean Q-Target: 92.9375	Effective Epsilon: 0.001	Time Taken: 63.24 sec
+19-27-2018 00:27:29 IST -   MAIN -    DEBUG :: Episode 209	Average Score: 184.21	Score: 200.00	State: -0.3577123213893169	Mean Q-Target: 27.9467	Effective Epsilon: 0.001	Time Taken: 63.37 sec
+19-28-2018 00:28:33 IST -   MAIN -    DEBUG :: Episode 210	Average Score: 184.43	Score: 200.00	State: -0.08312004077328905	Mean Q-Target: 68.0242	Effective Epsilon: 0.001	Time Taken: 63.28 sec
+19-29-2018 00:29:36 IST -   MAIN -    DEBUG :: Episode 211	Average Score: 184.94	Score: 200.00	State: -0.21034653516912485	Mean Q-Target: 69.5829	Effective Epsilon: 0.001	Time Taken: 63.26 sec
+19-30-2018 00:30:39 IST -   MAIN -    DEBUG :: Episode 212	Average Score: 185.55	Score: 200.00	State: 0.16085488264661751	Mean Q-Target: 63.8261	Effective Epsilon: 0.001	Time Taken: 63.25 sec
+19-31-2018 00:31:43 IST -   MAIN -    DEBUG :: Episode 213	Average Score: 185.72	Score: 200.00	State: -0.7176898469143161	Mean Q-Target: 77.8495	Effective Epsilon: 0.001	Time Taken: 63.38 sec
+19-32-2018 00:32:46 IST -   MAIN -    DEBUG :: Episode 214	Average Score: 186.34	Score: 200.00	State: -0.1259114856752512	Mean Q-Target: 30.1485	Effective Epsilon: 0.001	Time Taken: 63.41 sec
+19-33-2018 00:33:49 IST -   MAIN -    DEBUG :: Episode 215	Average Score: 186.64	Score: 200.00	State: -0.4449147833878228	Mean Q-Target: 68.3700	Effective Epsilon: 0.001	Time Taken: 63.31 sec
+19-34-2018 00:34:53 IST -   MAIN -    DEBUG :: Episode 216	Average Score: 186.64	Score: 200.00	State: 0.3782689408075813	Mean Q-Target: 83.5302	Effective Epsilon: 0.001	Time Taken: 63.31 sec
+19-35-2018 00:35:56 IST -   MAIN -    DEBUG :: Episode 217	Average Score: 186.94	Score: 200.00	State: 0.4894252510997688	Mean Q-Target: 34.8954	Effective Epsilon: 0.001	Time Taken: 63.31 sec
+19-36-2018 00:36:59 IST -   MAIN -    DEBUG :: Episode 218	Average Score: 187.78	Score: 200.00	State: -0.994031571261045	Mean Q-Target: 88.9558	Effective Epsilon: 0.001	Time Taken: 63.34 sec
+19-38-2018 00:38:03 IST -   MAIN -    DEBUG :: Episode 219	Average Score: 188.57	Score: 200.00	State: -1.277677752702762	Mean Q-Target: 92.1572	Effective Epsilon: 0.001	Time Taken: 63.88 sec
+19-39-2018 00:39:07 IST -   MAIN -    DEBUG :: Episode 220	Average Score: 188.57	Score: 200.00	State: -0.025593593371182676	Mean Q-Target: 77.5750	Effective Epsilon: 0.001	Time Taken: 63.34 sec
+19-39-2018 00:39:48 IST -   MAIN -    DEBUG :: Episode 221	Average Score: 188.38	Score: 131.00	State: -2.4016142833853142	Mean Q-Target: 70.9966	Effective Epsilon: 0.001	Time Taken: 41.40 sec
+19-40-2018 00:40:51 IST -   MAIN -    DEBUG :: Episode 222	Average Score: 188.87	Score: 200.00	State: -0.3767123941085561	Mean Q-Target: 97.5019	Effective Epsilon: 0.001	Time Taken: 63.22 sec
+19-41-2018 00:41:55 IST -   MAIN -    DEBUG :: Episode 223	Average Score: 189.24	Score: 200.00	State: 2.298606410576997	Mean Q-Target: 48.4579	Effective Epsilon: 0.001	Time Taken: 63.47 sec
+19-42-2018 00:42:58 IST -   MAIN -    DEBUG :: Episode 224	Average Score: 189.24	Score: 200.00	State: -0.5539225481281299	Mean Q-Target: 99.2882	Effective Epsilon: 0.001	Time Taken: 63.35 sec
+19-44-2018 00:44:01 IST -   MAIN -    DEBUG :: Episode 225	Average Score: 189.24	Score: 200.00	State: 0.46332724911799533	Mean Q-Target: 39.2433	Effective Epsilon: 0.001	Time Taken: 63.26 sec
+19-45-2018 00:45:03 IST -   MAIN -    DEBUG :: Episode 226	Average Score: 189.17	Score: 193.00	State: -0.5344480852602649	Mean Q-Target: 38.4185	Effective Epsilon: 0.001	Time Taken: 61.83 sec
+19-46-2018 00:46:06 IST -   MAIN -    DEBUG :: Episode 227	Average Score: 189.17	Score: 200.00	State: -1.034646636402464	Mean Q-Target: 101.1328	Effective Epsilon: 0.001	Time Taken: 63.24 sec
+19-47-2018 00:47:09 IST -   MAIN -    DEBUG :: Episode 228	Average Score: 189.17	Score: 200.00	State: -0.6396688194591421	Mean Q-Target: 99.9682	Effective Epsilon: 0.001	Time Taken: 63.16 sec
+19-48-2018 00:48:13 IST -   MAIN -    DEBUG :: Episode 229	Average Score: 189.17	Score: 200.00	State: -0.016297726186390867	Mean Q-Target: 83.6431	Effective Epsilon: 0.001	Time Taken: 63.17 sec
+19-49-2018 00:49:16 IST -   MAIN -    DEBUG :: Episode 230	Average Score: 189.17	Score: 200.00	State: -1.0120816122017766	Mean Q-Target: 100.6150	Effective Epsilon: 0.001	Time Taken: 63.16 sec
+19-50-2018 00:50:19 IST -   MAIN -    DEBUG :: Episode 231	Average Score: 189.17	Score: 200.00	State: 0.04422615236863267	Mean Q-Target: 99.7864	Effective Epsilon: 0.001	Time Taken: 63.14 sec
+19-51-2018 00:51:22 IST -   MAIN -    DEBUG :: Episode 232	Average Score: 189.17	Score: 200.00	State: 0.3116313504047221	Mean Q-Target: 94.8848	Effective Epsilon: 0.001	Time Taken: 63.07 sec
+19-52-2018 00:52:17 IST -   MAIN -    DEBUG :: Episode 233	Average Score: 188.89	Score: 172.00	State: -0.2326223353037018	Mean Q-Target: 84.3764	Effective Epsilon: 0.001	Time Taken: 54.82 sec
+19-53-2018 00:53:20 IST -   MAIN -    DEBUG :: Episode 234	Average Score: 188.89	Score: 200.00	State: 0.6057092085007185	Mean Q-Target: 86.4555	Effective Epsilon: 0.001	Time Taken: 63.13 sec
+19-54-2018 00:54:14 IST -   MAIN -    DEBUG :: Episode 235	Average Score: 189.30	Score: 170.00	State: -0.48484581507710517	Mean Q-Target: 55.6772	Effective Epsilon: 0.001	Time Taken: 53.64 sec
+19-55-2018 00:55:05 IST -   MAIN -    DEBUG :: Episode 236	Average Score: 189.59	Score: 162.00	State: -0.08453959887310515	Mean Q-Target: 67.2187	Effective Epsilon: 0.001	Time Taken: 51.16 sec
+19-56-2018 00:56:08 IST -   MAIN -    DEBUG :: Episode 237	Average Score: 189.59	Score: 200.00	State: -0.3740363727172275	Mean Q-Target: 72.5060	Effective Epsilon: 0.001	Time Taken: 63.14 sec
+19-57-2018 00:57:11 IST -   MAIN -    DEBUG :: Episode 238	Average Score: 189.97	Score: 200.00	State: -0.26055745287771653	Mean Q-Target: 95.9204	Effective Epsilon: 0.001	Time Taken: 63.24 sec
+19-58-2018 00:58:14 IST -   MAIN -    DEBUG :: Episode 239	Average Score: 190.82	Score: 200.00	State: -0.41529519743892596	Mean Q-Target: 37.9457	Effective Epsilon: 0.001	Time Taken: 63.14 sec
+19-59-2018 00:59:18 IST -   MAIN -    DEBUG :: Episode 240	Average Score: 191.65	Score: 200.00	State: -0.03160379039069278	Mean Q-Target: 96.5409	Effective Epsilon: 0.001	Time Taken: 63.27 sec
+19-00-2018 01:00:16 IST -   MAIN -    DEBUG :: Episode 241	Average Score: 192.31	Score: 186.00	State: -0.31493889781001283	Mean Q-Target: 102.3731	Effective Epsilon: 0.001	Time Taken: 58.73 sec
+19-01-2018 01:01:19 IST -   MAIN -    DEBUG :: Episode 242	Average Score: 193.23	Score: 200.00	State: 1.0897728926764925	Mean Q-Target: 83.9643	Effective Epsilon: 0.001	Time Taken: 63.15 sec
+19-02-2018 01:02:23 IST -   MAIN -    DEBUG :: Episode 243	Average Score: 193.23	Score: 200.00	State: 0.944699134501351	Mean Q-Target: 76.5573	Effective Epsilon: 0.001	Time Taken: 63.13 sec
+19-03-2018 01:03:26 IST -   MAIN -    DEBUG :: Episode 244	Average Score: 193.25	Score: 200.00	State: 0.035998622939960014	Mean Q-Target: 99.8371	Effective Epsilon: 0.001	Time Taken: 63.22 sec
+19-04-2018 01:04:29 IST -   MAIN -    DEBUG :: Episode 245	Average Score: 193.25	Score: 200.00	State: 0.15037464289928387	Mean Q-Target: 67.5849	Effective Epsilon: 0.001	Time Taken: 63.25 sec
+19-05-2018 01:05:33 IST -   MAIN -    DEBUG :: Episode 246	Average Score: 193.25	Score: 200.00	State: 0.29545268278959685	Mean Q-Target: 100.2796	Effective Epsilon: 0.001	Time Taken: 63.71 sec
+19-06-2018 01:06:36 IST -   MAIN -    DEBUG :: Episode 247	Average Score: 193.25	Score: 200.00	State: 1.1507976304765928	Mean Q-Target: 97.7159	Effective Epsilon: 0.001	Time Taken: 63.21 sec
+19-07-2018 01:07:39 IST -   MAIN -    DEBUG :: Episode 248	Average Score: 193.25	Score: 200.00	State: 0.678375141031505	Mean Q-Target: 68.1835	Effective Epsilon: 0.001	Time Taken: 63.12 sec
+19-08-2018 01:08:42 IST -   MAIN -    DEBUG :: Episode 249	Average Score: 193.25	Score: 200.00	State: -0.49205626010099385	Mean Q-Target: 98.0944	Effective Epsilon: 0.001	Time Taken: 63.26 sec
+19-09-2018 01:09:46 IST -   MAIN -    DEBUG :: Episode 250	Average Score: 193.25	Score: 200.00	State: -0.4692547398540571	Mean Q-Target: 99.6780	Effective Epsilon: 0.001	Time Taken: 63.37 sec
+19-10-2018 01:10:49 IST -   MAIN -    DEBUG :: Episode 251	Average Score: 193.25	Score: 200.00	State: 0.5133023895939118	Mean Q-Target: 85.0294	Effective Epsilon: 0.001	Time Taken: 63.25 sec
+19-11-2018 01:11:52 IST -   MAIN -    DEBUG :: Episode 252	Average Score: 193.25	Score: 200.00	State: 0.6135865625368613	Mean Q-Target: 37.9041	Effective Epsilon: 0.001	Time Taken: 63.29 sec
+19-12-2018 01:12:55 IST -   MAIN -    DEBUG :: Episode 253	Average Score: 193.25	Score: 200.00	State: 0.8129277096261285	Mean Q-Target: 92.1197	Effective Epsilon: 0.001	Time Taken: 63.17 sec
+19-13-2018 01:13:59 IST -   MAIN -    DEBUG :: Episode 254	Average Score: 193.25	Score: 200.00	State: 0.5115090620481876	Mean Q-Target: 47.0252	Effective Epsilon: 0.001	Time Taken: 63.11 sec
+19-15-2018 01:15:02 IST -   MAIN -    DEBUG :: Episode 255	Average Score: 193.25	Score: 200.00	State: 0.7101173134733463	Mean Q-Target: 72.7311	Effective Epsilon: 0.001	Time Taken: 63.16 sec
+19-16-2018 01:16:05 IST -   MAIN -    DEBUG :: Episode 256	Average Score: 193.25	Score: 200.00	State: -0.28420856964603763	Mean Q-Target: 88.2177	Effective Epsilon: 0.001	Time Taken: 63.17 sec
+19-17-2018 01:17:08 IST -   MAIN -    DEBUG :: Episode 257	Average Score: 194.08	Score: 200.00	State: 0.6822910764548449	Mean Q-Target: 50.0345	Effective Epsilon: 0.001	Time Taken: 63.13 sec
+19-18-2018 01:18:11 IST -   MAIN -    DEBUG :: Episode 258	Average Score: 194.90	Score: 200.00	State: 0.08211314315837949	Mean Q-Target: 97.6524	Effective Epsilon: 0.001	Time Taken: 63.11 sec
+19-19-2018 01:19:15 IST -   MAIN -    DEBUG :: Episode 259	Average Score: 194.90	Score: 200.00	State: 0.19300605546838182	Mean Q-Target: 85.2593	Effective Epsilon: 0.001	Time Taken: 64.16 sec
+19-20-2018 01:20:19 IST -   MAIN -    DEBUG :: Episode 260	Average Score: 194.90	Score: 200.00	State: -0.018750370787075994	Mean Q-Target: 94.8436	Effective Epsilon: 0.001	Time Taken: 63.19 sec
+19-21-2018 01:21:22 IST -   MAIN -    DEBUG :: Episode 261	Average Score: 195.36	Score: 200.00	State: -0.19119035436845733	Mean Q-Target: 13.4001	Effective Epsilon: 0.001	Time Taken: 63.30 sec
+19-22-2018 01:22:25 IST -   MAIN -    DEBUG :: Episode 262	Average Score: 195.36	Score: 200.00	State: 1.0776369712026925	Mean Q-Target: 83.5687	Effective Epsilon: 0.001	Time Taken: 63.30 sec
+19-23-2018 01:23:28 IST -   MAIN -    DEBUG :: Episode 263	Average Score: 195.36	Score: 200.00	State: 0.32383716021438885	Mean Q-Target: 81.8611	Effective Epsilon: 0.001	Time Taken: 63.04 sec
+19-24-2018 01:24:31 IST -   MAIN -    DEBUG :: Episode 264	Average Score: 195.36	Score: 200.00	State: 0.06568836563194361	Mean Q-Target: 98.3673	Effective Epsilon: 0.001	Time Taken: 63.13 sec
+19-25-2018 01:25:35 IST -   MAIN -    DEBUG :: Episode 265	Average Score: 195.36	Score: 200.00	State: 0.08553593082506948	Mean Q-Target: 97.8884	Effective Epsilon: 0.001	Time Taken: 63.23 sec
+19-25-2018 01:25:35 IST - RESULT -    DEBUG :: Completed model training with avg reward 195.36 over last 100 episodes. Training ran for total of 265 epsiodes
+19-25-2018 01:25:35 IST -   MAIN -     INFO :: Plotting reward per episode.
+19-25-2018 01:25:35 IST -   MAIN -     INFO :: Saving the reward plot as image at results/reward_plot_CartPole-v0_1534607382.5808585.jpeg

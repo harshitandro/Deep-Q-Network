@@ -1,0 +1,215 @@
+19-37-2018 23:37:26 IST - RESULT -     INFO :: ==============================================================================================================
+19-37-2018 23:37:26 IST - RESULT -     INFO :: OpenAI Gym Task : CartPole-v0 Solution program
+19-37-2018 23:37:26 IST - RESULT -    DEBUG :: Initial Timestamp : 1534607382.5808585
+19-37-2018 23:37:26 IST - RESULT -     INFO :: Starting new instance of the program in  test mode...
+19-37-2018 23:37:26 IST - RESULT -     INFO :: Initialised with parameters
+19-37-2018 23:37:26 IST - RESULT -    DEBUG :: Parameters list : {'mode': 'test', 'itr_count': 500, 'batch_size': 32, 'lr': 0.0001, 'gamma': 0.99, 'render': True, 'model_path': 'save/CartPole-v0_local_model_1534607382.5808585.h5', 'test_total_iterations': 100, 'avg_expected_reward': 195.0}
+19-37-2018 23:37:26 IST -   MAIN -     INFO :: OpenAI Gym Env. under effect : CartPole-v0
+19-37-2018 23:37:26 IST -   MAIN -    DEBUG :: State shape: (4,)
+19-37-2018 23:37:26 IST -   MAIN -    DEBUG :: Number of actions: 2
+19-37-2018 23:37:26 IST - RESULT -     INFO :: Loading the saved model from 'save/CartPole-v0_local_model_1534607382.5808585.h5'
+19-37-2018 23:37:27 IST - RESULT -     INFO :: Creating a gif of how agent is playing in the env at : results/agent_play/agentplay_CartPole-v0_1534607382.5808585.gif
+19-37-2018 23:37:27 IST -   MAIN -    DEBUG :: Start state : [ 0.01255218 -0.02402183  0.00918595 -0.04121813]
+19-37-2018 23:37:38 IST - RESULT -     INFO :: Now running model test for 100 iterations with expected reward >= 195.0
+19-37-2018 23:37:38 IST -   MAIN -    DEBUG :: Start state : [ 0.03068467 -0.01789535 -0.04953894  0.01011159]
+19-37-2018 23:37:41 IST - RESULT -     INFO :: Iteration: 1 Score: (200.0, [])
+19-37-2018 23:37:41 IST -   MAIN -    DEBUG :: Start state : [-0.0027698   0.02356199  0.04424912 -0.03285718]
+19-37-2018 23:37:44 IST - RESULT -     INFO :: Iteration: 2 Score: (200.0, [])
+19-37-2018 23:37:44 IST -   MAIN -    DEBUG :: Start state : [-0.02926524  0.04508034 -0.00318599  0.03721614]
+19-37-2018 23:37:48 IST - RESULT -     INFO :: Iteration: 3 Score: (200.0, [])
+19-37-2018 23:37:48 IST -   MAIN -    DEBUG :: Start state : [ 0.03312927  0.04482226  0.03316369 -0.04648027]
+19-37-2018 23:37:51 IST - RESULT -     INFO :: Iteration: 4 Score: (200.0, [])
+19-37-2018 23:37:51 IST -   MAIN -    DEBUG :: Start state : [ 0.01976759 -0.0020631  -0.01566682 -0.00867485]
+19-37-2018 23:37:54 IST - RESULT -     INFO :: Iteration: 5 Score: (200.0, [])
+19-37-2018 23:37:54 IST -   MAIN -    DEBUG :: Start state : [ 0.03678753 -0.01968065 -0.01917495  0.01844079]
+19-37-2018 23:37:58 IST - RESULT -     INFO :: Iteration: 6 Score: (200.0, [])
+19-37-2018 23:37:58 IST -   MAIN -    DEBUG :: Start state : [ 0.02504208  0.03619475 -0.0129203   0.0023359 ]
+19-38-2018 23:38:01 IST - RESULT -     INFO :: Iteration: 7 Score: (200.0, [])
+19-38-2018 23:38:01 IST -   MAIN -    DEBUG :: Start state : [ 0.04857745 -0.01758899  0.03879324 -0.01963793]
+19-38-2018 23:38:04 IST - RESULT -     INFO :: Iteration: 8 Score: (200.0, [])
+19-38-2018 23:38:04 IST -   MAIN -    DEBUG :: Start state : [-0.02073441  0.01512301  0.0072658   0.04312984]
+19-38-2018 23:38:08 IST - RESULT -     INFO :: Iteration: 9 Score: (200.0, [])
+19-38-2018 23:38:08 IST -   MAIN -    DEBUG :: Start state : [0.01714769 0.04771087 0.032625   0.04709502]
+19-38-2018 23:38:11 IST - RESULT -     INFO :: Iteration: 10 Score: (200.0, [])
+19-38-2018 23:38:11 IST -   MAIN -    DEBUG :: Start state : [0.00485428 0.04238744 0.01525936 0.03582294]
+19-38-2018 23:38:14 IST - RESULT -     INFO :: Iteration: 11 Score: (200.0, [])
+19-38-2018 23:38:14 IST -   MAIN -    DEBUG :: Start state : [ 0.04395873 -0.00239446 -0.01937547  0.01411145]
+19-38-2018 23:38:18 IST - RESULT -     INFO :: Iteration: 12 Score: (200.0, [])
+19-38-2018 23:38:18 IST -   MAIN -    DEBUG :: Start state : [ 0.02031731 -0.03697144 -0.00214547  0.03655927]
+19-38-2018 23:38:21 IST - RESULT -     INFO :: Iteration: 13 Score: (200.0, [])
+19-38-2018 23:38:21 IST -   MAIN -    DEBUG :: Start state : [-0.01930279 -0.04246587 -0.02645798 -0.0400169 ]
+19-38-2018 23:38:24 IST - RESULT -     INFO :: Iteration: 14 Score: (200.0, [])
+19-38-2018 23:38:24 IST -   MAIN -    DEBUG :: Start state : [ 0.03493186 -0.01106602  0.01066287 -0.01196678]
+19-38-2018 23:38:28 IST - RESULT -     INFO :: Iteration: 15 Score: (200.0, [])
+19-38-2018 23:38:28 IST -   MAIN -    DEBUG :: Start state : [ 0.02170206 -0.03478042 -0.02129476 -0.01621245]
+19-38-2018 23:38:31 IST - RESULT -     INFO :: Iteration: 16 Score: (200.0, [])
+19-38-2018 23:38:31 IST -   MAIN -    DEBUG :: Start state : [ 0.00730894  0.00718116  0.03479518 -0.00625644]
+19-38-2018 23:38:34 IST - RESULT -     INFO :: Iteration: 17 Score: (200.0, [])
+19-38-2018 23:38:34 IST -   MAIN -    DEBUG :: Start state : [ 0.00681542 -0.03336356 -0.02765452  0.02013438]
+19-38-2018 23:38:38 IST - RESULT -     INFO :: Iteration: 18 Score: (200.0, [])
+19-38-2018 23:38:38 IST -   MAIN -    DEBUG :: Start state : [-0.02604509 -0.01137087  0.03001434  0.01728837]
+19-38-2018 23:38:41 IST - RESULT -     INFO :: Iteration: 19 Score: (200.0, [])
+19-38-2018 23:38:41 IST -   MAIN -    DEBUG :: Start state : [-0.04388622 -0.00949893 -0.01198165 -0.00965392]
+19-38-2018 23:38:45 IST - RESULT -     INFO :: Iteration: 20 Score: (200.0, [])
+19-38-2018 23:38:45 IST -   MAIN -    DEBUG :: Start state : [ 0.04007413 -0.02646466 -0.02161145 -0.0178168 ]
+19-38-2018 23:38:48 IST - RESULT -     INFO :: Iteration: 21 Score: (200.0, [])
+19-38-2018 23:38:48 IST -   MAIN -    DEBUG :: Start state : [-0.04566521  0.0112051  -0.04787452 -0.03349141]
+19-38-2018 23:38:51 IST - RESULT -     INFO :: Iteration: 22 Score: (200.0, [])
+19-38-2018 23:38:51 IST -   MAIN -    DEBUG :: Start state : [ 0.02184462 -0.03302601  0.01687663  0.01723322]
+19-38-2018 23:38:55 IST - RESULT -     INFO :: Iteration: 23 Score: (200.0, [])
+19-38-2018 23:38:55 IST -   MAIN -    DEBUG :: Start state : [ 0.02207318  0.03603166 -0.01124256 -0.04976165]
+19-38-2018 23:38:58 IST - RESULT -     INFO :: Iteration: 24 Score: (200.0, [])
+19-38-2018 23:38:58 IST -   MAIN -    DEBUG :: Start state : [ 0.00534171  0.04860443 -0.00987128  0.00182877]
+19-39-2018 23:39:01 IST - RESULT -     INFO :: Iteration: 25 Score: (200.0, [])
+19-39-2018 23:39:01 IST -   MAIN -    DEBUG :: Start state : [-0.0092033   0.02048672 -0.04466961  0.00705865]
+19-39-2018 23:39:05 IST - RESULT -     INFO :: Iteration: 26 Score: (200.0, [])
+19-39-2018 23:39:05 IST -   MAIN -    DEBUG :: Start state : [-0.04624884  0.04020035 -0.04970866 -0.00766994]
+19-39-2018 23:39:08 IST - RESULT -     INFO :: Iteration: 27 Score: (200.0, [])
+19-39-2018 23:39:08 IST -   MAIN -    DEBUG :: Start state : [-0.00072177 -0.01769922 -0.01675735  0.04239245]
+19-39-2018 23:39:11 IST - RESULT -     INFO :: Iteration: 28 Score: (200.0, [])
+19-39-2018 23:39:11 IST -   MAIN -    DEBUG :: Start state : [-0.0069921  -0.04746577 -0.04246127 -0.04065166]
+19-39-2018 23:39:15 IST - RESULT -     INFO :: Iteration: 29 Score: (200.0, [])
+19-39-2018 23:39:15 IST -   MAIN -    DEBUG :: Start state : [ 0.0445711   0.03652549 -0.04255613 -0.03818243]
+19-39-2018 23:39:18 IST - RESULT -     INFO :: Iteration: 30 Score: (200.0, [])
+19-39-2018 23:39:18 IST -   MAIN -    DEBUG :: Start state : [-0.04722346 -0.03413195  0.02209859 -0.03652091]
+19-39-2018 23:39:21 IST - RESULT -     INFO :: Iteration: 31 Score: (200.0, [])
+19-39-2018 23:39:21 IST -   MAIN -    DEBUG :: Start state : [-0.01493929 -0.03895013 -0.03881856  0.01275097]
+19-39-2018 23:39:25 IST - RESULT -     INFO :: Iteration: 32 Score: (200.0, [])
+19-39-2018 23:39:25 IST -   MAIN -    DEBUG :: Start state : [-0.04631195  0.00640015  0.03802253 -0.01518761]
+19-39-2018 23:39:28 IST - RESULT -     INFO :: Iteration: 33 Score: (200.0, [])
+19-39-2018 23:39:28 IST -   MAIN -    DEBUG :: Start state : [-0.01868542 -0.03073065 -0.01090777 -0.03789926]
+19-39-2018 23:39:31 IST - RESULT -     INFO :: Iteration: 34 Score: (200.0, [])
+19-39-2018 23:39:31 IST -   MAIN -    DEBUG :: Start state : [ 0.03354155 -0.01892014  0.04615194 -0.00320129]
+19-39-2018 23:39:35 IST - RESULT -     INFO :: Iteration: 35 Score: (200.0, [])
+19-39-2018 23:39:35 IST -   MAIN -    DEBUG :: Start state : [ 0.01287921 -0.0014396  -0.04708918  0.04085266]
+19-39-2018 23:39:38 IST - RESULT -     INFO :: Iteration: 36 Score: (200.0, [])
+19-39-2018 23:39:38 IST -   MAIN -    DEBUG :: Start state : [ 0.03560663 -0.02987753  0.04370981 -0.00611212]
+19-39-2018 23:39:41 IST - RESULT -     INFO :: Iteration: 37 Score: (200.0, [])
+19-39-2018 23:39:41 IST -   MAIN -    DEBUG :: Start state : [ 0.01438714 -0.02767517  0.02867826 -0.02106368]
+19-39-2018 23:39:45 IST - RESULT -     INFO :: Iteration: 38 Score: (200.0, [])
+19-39-2018 23:39:45 IST -   MAIN -    DEBUG :: Start state : [-0.03592249 -0.03303027 -0.03980315  0.02938042]
+19-39-2018 23:39:48 IST - RESULT -     INFO :: Iteration: 39 Score: (200.0, [])
+19-39-2018 23:39:48 IST -   MAIN -    DEBUG :: Start state : [ 0.00183764  0.00776663 -0.01880602  0.0464087 ]
+19-39-2018 23:39:52 IST - RESULT -     INFO :: Iteration: 40 Score: (200.0, [])
+19-39-2018 23:39:52 IST -   MAIN -    DEBUG :: Start state : [-0.00095706  0.00095404 -0.01525836 -0.04776972]
+19-39-2018 23:39:55 IST - RESULT -     INFO :: Iteration: 41 Score: (200.0, [])
+19-39-2018 23:39:55 IST -   MAIN -    DEBUG :: Start state : [ 0.04188101 -0.00576651  0.00673675  0.03706887]
+19-39-2018 23:39:58 IST - RESULT -     INFO :: Iteration: 42 Score: (200.0, [])
+19-39-2018 23:39:58 IST -   MAIN -    DEBUG :: Start state : [0.02003884 0.02542535 0.02659936 0.0060074 ]
+19-40-2018 23:40:02 IST - RESULT -     INFO :: Iteration: 43 Score: (200.0, [])
+19-40-2018 23:40:02 IST -   MAIN -    DEBUG :: Start state : [-0.042512    0.02159984 -0.04186268  0.01936555]
+19-40-2018 23:40:05 IST - RESULT -     INFO :: Iteration: 44 Score: (200.0, [])
+19-40-2018 23:40:05 IST -   MAIN -    DEBUG :: Start state : [ 0.03198004 -0.04226154 -0.02809342 -0.02800911]
+19-40-2018 23:40:08 IST - RESULT -     INFO :: Iteration: 45 Score: (200.0, [])
+19-40-2018 23:40:08 IST -   MAIN -    DEBUG :: Start state : [ 0.04873896  0.0476924  -0.00178037 -0.01293644]
+19-40-2018 23:40:12 IST - RESULT -     INFO :: Iteration: 46 Score: (200.0, [])
+19-40-2018 23:40:12 IST -   MAIN -    DEBUG :: Start state : [-0.04773604  0.01632269 -0.04808342 -0.02847196]
+19-40-2018 23:40:15 IST - RESULT -     INFO :: Iteration: 47 Score: (200.0, [])
+19-40-2018 23:40:15 IST -   MAIN -    DEBUG :: Start state : [-0.01761324 -0.01669657 -0.00956495  0.00655237]
+19-40-2018 23:40:18 IST - RESULT -     INFO :: Iteration: 48 Score: (200.0, [])
+19-40-2018 23:40:18 IST -   MAIN -    DEBUG :: Start state : [ 0.04575349  0.03833748  0.02000172 -0.02303991]
+19-40-2018 23:40:22 IST - RESULT -     INFO :: Iteration: 49 Score: (200.0, [])
+19-40-2018 23:40:22 IST -   MAIN -    DEBUG :: Start state : [-0.04072724 -0.03895053 -0.02044772  0.01543527]
+19-40-2018 23:40:25 IST - RESULT -     INFO :: Iteration: 50 Score: (200.0, [])
+19-40-2018 23:40:25 IST -   MAIN -    DEBUG :: Start state : [ 0.00054354 -0.04314577  0.03959365 -0.00319072]
+19-40-2018 23:40:28 IST - RESULT -     INFO :: Iteration: 51 Score: (200.0, [])
+19-40-2018 23:40:28 IST -   MAIN -    DEBUG :: Start state : [ 0.023866    0.04717156 -0.00307745  0.02794084]
+19-40-2018 23:40:32 IST - RESULT -     INFO :: Iteration: 52 Score: (200.0, [])
+19-40-2018 23:40:32 IST -   MAIN -    DEBUG :: Start state : [ 0.00706342 -0.04127762 -0.01696959 -0.01240858]
+19-40-2018 23:40:35 IST - RESULT -     INFO :: Iteration: 53 Score: (200.0, [])
+19-40-2018 23:40:35 IST -   MAIN -    DEBUG :: Start state : [ 0.03940103  0.02816821 -0.02556499  0.03012739]
+19-40-2018 23:40:38 IST - RESULT -     INFO :: Iteration: 54 Score: (200.0, [])
+19-40-2018 23:40:38 IST -   MAIN -    DEBUG :: Start state : [-0.03504849 -0.0219755  -0.00823639  0.02525603]
+19-40-2018 23:40:42 IST - RESULT -     INFO :: Iteration: 55 Score: (200.0, [])
+19-40-2018 23:40:42 IST -   MAIN -    DEBUG :: Start state : [-0.01349781 -0.03287415  0.0194916   0.0215665 ]
+19-40-2018 23:40:45 IST - RESULT -     INFO :: Iteration: 56 Score: (200.0, [])
+19-40-2018 23:40:45 IST -   MAIN -    DEBUG :: Start state : [ 0.00591923 -0.00678043 -0.02181694  0.02582372]
+19-40-2018 23:40:48 IST - RESULT -     INFO :: Iteration: 57 Score: (200.0, [])
+19-40-2018 23:40:48 IST -   MAIN -    DEBUG :: Start state : [-0.01782398  0.01136909 -0.04907793  0.00354812]
+19-40-2018 23:40:52 IST - RESULT -     INFO :: Iteration: 58 Score: (200.0, [])
+19-40-2018 23:40:52 IST -   MAIN -    DEBUG :: Start state : [ 0.03143967 -0.01411892 -0.01691322  0.01291478]
+19-40-2018 23:40:55 IST - RESULT -     INFO :: Iteration: 59 Score: (200.0, [])
+19-40-2018 23:40:55 IST -   MAIN -    DEBUG :: Start state : [ 0.02608625 -0.02127273  0.00381176 -0.0048978 ]
+19-40-2018 23:40:58 IST - RESULT -     INFO :: Iteration: 60 Score: (200.0, [])
+19-40-2018 23:40:58 IST -   MAIN -    DEBUG :: Start state : [ 0.01154379  0.01020547  0.023507   -0.02939194]
+19-41-2018 23:41:02 IST - RESULT -     INFO :: Iteration: 61 Score: (200.0, [])
+19-41-2018 23:41:02 IST -   MAIN -    DEBUG :: Start state : [-0.00653094 -0.04323087  0.02367669  0.03276237]
+19-41-2018 23:41:05 IST - RESULT -     INFO :: Iteration: 62 Score: (200.0, [])
+19-41-2018 23:41:05 IST -   MAIN -    DEBUG :: Start state : [ 0.02407959  0.04503287 -0.0015004   0.04532452]
+19-41-2018 23:41:08 IST - RESULT -     INFO :: Iteration: 63 Score: (200.0, [])
+19-41-2018 23:41:08 IST -   MAIN -    DEBUG :: Start state : [-0.03571214 -0.02668876  0.03666784  0.03189461]
+19-41-2018 23:41:12 IST - RESULT -     INFO :: Iteration: 64 Score: (200.0, [])
+19-41-2018 23:41:12 IST -   MAIN -    DEBUG :: Start state : [0.01823827 0.02584127 0.03635368 0.03837768]
+19-41-2018 23:41:15 IST - RESULT -     INFO :: Iteration: 65 Score: (200.0, [])
+19-41-2018 23:41:15 IST -   MAIN -    DEBUG :: Start state : [ 0.01731455 -0.02405196 -0.02035488  0.0285364 ]
+19-41-2018 23:41:18 IST - RESULT -     INFO :: Iteration: 66 Score: (200.0, [])
+19-41-2018 23:41:18 IST -   MAIN -    DEBUG :: Start state : [-0.04984412 -0.01235311 -0.00468856  0.04938594]
+19-41-2018 23:41:22 IST - RESULT -     INFO :: Iteration: 67 Score: (200.0, [])
+19-41-2018 23:41:22 IST -   MAIN -    DEBUG :: Start state : [ 0.00059911  0.03828807  0.04737673 -0.02924835]
+19-41-2018 23:41:25 IST - RESULT -     INFO :: Iteration: 68 Score: (200.0, [])
+19-41-2018 23:41:25 IST -   MAIN -    DEBUG :: Start state : [ 0.02542705  0.00560793  0.02532096 -0.0475063 ]
+19-41-2018 23:41:28 IST - RESULT -     INFO :: Iteration: 69 Score: (200.0, [])
+19-41-2018 23:41:28 IST -   MAIN -    DEBUG :: Start state : [ 0.00485301 -0.03521236 -0.04190195 -0.01002649]
+19-41-2018 23:41:32 IST - RESULT -     INFO :: Iteration: 70 Score: (200.0, [])
+19-41-2018 23:41:32 IST -   MAIN -    DEBUG :: Start state : [ 0.02290712  0.0312115  -0.04957914  0.00135305]
+19-41-2018 23:41:35 IST - RESULT -     INFO :: Iteration: 71 Score: (200.0, [])
+19-41-2018 23:41:35 IST -   MAIN -    DEBUG :: Start state : [-0.04178028 -0.02744004  0.01552949  0.00605014]
+19-41-2018 23:41:38 IST - RESULT -     INFO :: Iteration: 72 Score: (200.0, [])
+19-41-2018 23:41:38 IST -   MAIN -    DEBUG :: Start state : [-0.02027514  0.01791701  0.01985603 -0.03636501]
+19-41-2018 23:41:42 IST - RESULT -     INFO :: Iteration: 73 Score: (200.0, [])
+19-41-2018 23:41:42 IST -   MAIN -    DEBUG :: Start state : [-0.04899827  0.01873857  0.01078352  0.0045108 ]
+19-41-2018 23:41:45 IST - RESULT -     INFO :: Iteration: 74 Score: (200.0, [])
+19-41-2018 23:41:45 IST -   MAIN -    DEBUG :: Start state : [ 0.03737767 -0.0145606   0.01527742  0.00585152]
+19-41-2018 23:41:48 IST - RESULT -     INFO :: Iteration: 75 Score: (200.0, [])
+19-41-2018 23:41:48 IST -   MAIN -    DEBUG :: Start state : [ 0.0470114  -0.02957294  0.00491629 -0.00637495]
+19-41-2018 23:41:52 IST - RESULT -     INFO :: Iteration: 76 Score: (200.0, [])
+19-41-2018 23:41:52 IST -   MAIN -    DEBUG :: Start state : [-0.01073607  0.04085609  0.02768034  0.01641938]
+19-41-2018 23:41:55 IST - RESULT -     INFO :: Iteration: 77 Score: (200.0, [])
+19-41-2018 23:41:55 IST -   MAIN -    DEBUG :: Start state : [-0.01287836  0.03331479 -0.00390044 -0.04653577]
+19-41-2018 23:41:58 IST - RESULT -     INFO :: Iteration: 78 Score: (200.0, [])
+19-41-2018 23:41:58 IST -   MAIN -    DEBUG :: Start state : [-0.01575586 -0.02875668 -0.03095272  0.00423907]
+19-42-2018 23:42:02 IST - RESULT -     INFO :: Iteration: 79 Score: (200.0, [])
+19-42-2018 23:42:02 IST -   MAIN -    DEBUG :: Start state : [-0.00470444  0.01255067  0.02826101  0.03097465]
+19-42-2018 23:42:05 IST - RESULT -     INFO :: Iteration: 80 Score: (200.0, [])
+19-42-2018 23:42:05 IST -   MAIN -    DEBUG :: Start state : [-0.02779191  0.00047871  0.03594198  0.00909084]
+19-42-2018 23:42:08 IST - RESULT -     INFO :: Iteration: 81 Score: (200.0, [])
+19-42-2018 23:42:08 IST -   MAIN -    DEBUG :: Start state : [ 0.03451369 -0.04343322 -0.0247934  -0.01348395]
+19-42-2018 23:42:12 IST - RESULT -     INFO :: Iteration: 82 Score: (200.0, [])
+19-42-2018 23:42:12 IST -   MAIN -    DEBUG :: Start state : [-0.03339928  0.01949368 -0.04490274  0.02146325]
+19-42-2018 23:42:15 IST - RESULT -     INFO :: Iteration: 83 Score: (200.0, [])
+19-42-2018 23:42:15 IST -   MAIN -    DEBUG :: Start state : [0.0357492  0.04753048 0.01931094 0.00510474]
+19-42-2018 23:42:18 IST - RESULT -     INFO :: Iteration: 84 Score: (200.0, [])
+19-42-2018 23:42:18 IST -   MAIN -    DEBUG :: Start state : [ 0.0210788  -0.02900882  0.0135158  -0.02500316]
+19-42-2018 23:42:22 IST - RESULT -     INFO :: Iteration: 85 Score: (200.0, [])
+19-42-2018 23:42:22 IST -   MAIN -    DEBUG :: Start state : [0.02847155 0.00716513 0.02602169 0.03803199]
+19-42-2018 23:42:25 IST - RESULT -     INFO :: Iteration: 86 Score: (200.0, [])
+19-42-2018 23:42:25 IST -   MAIN -    DEBUG :: Start state : [ 0.00981579 -0.04703847  0.04263805  0.04776238]
+19-42-2018 23:42:28 IST - RESULT -     INFO :: Iteration: 87 Score: (200.0, [])
+19-42-2018 23:42:28 IST -   MAIN -    DEBUG :: Start state : [ 0.00596472 -0.02591028 -0.0326117  -0.01424375]
+19-42-2018 23:42:32 IST - RESULT -     INFO :: Iteration: 88 Score: (200.0, [])
+19-42-2018 23:42:32 IST -   MAIN -    DEBUG :: Start state : [ 0.02232354  0.01239914 -0.04867439 -0.02182355]
+19-42-2018 23:42:35 IST - RESULT -     INFO :: Iteration: 89 Score: (200.0, [])
+19-42-2018 23:42:35 IST -   MAIN -    DEBUG :: Start state : [ 0.02324346  0.02741305 -0.0120228  -0.02490863]
+19-42-2018 23:42:38 IST - RESULT -     INFO :: Iteration: 90 Score: (200.0, [])
+19-42-2018 23:42:38 IST -   MAIN -    DEBUG :: Start state : [-0.02416251 -0.00547218 -0.01384447  0.04867127]
+19-42-2018 23:42:42 IST - RESULT -     INFO :: Iteration: 91 Score: (200.0, [])
+19-42-2018 23:42:42 IST -   MAIN -    DEBUG :: Start state : [ 0.03617772 -0.01467778 -0.03745356 -0.0247629 ]
+19-42-2018 23:42:45 IST - RESULT -     INFO :: Iteration: 92 Score: (200.0, [])
+19-42-2018 23:42:45 IST -   MAIN -    DEBUG :: Start state : [ 0.02545228 -0.02203517  0.02921456  0.00719505]
+19-42-2018 23:42:48 IST - RESULT -     INFO :: Iteration: 93 Score: (200.0, [])
+19-42-2018 23:42:48 IST -   MAIN -    DEBUG :: Start state : [ 0.01954452  0.01287445 -0.04878529 -0.02529515]
+19-42-2018 23:42:52 IST - RESULT -     INFO :: Iteration: 94 Score: (200.0, [])
+19-42-2018 23:42:52 IST -   MAIN -    DEBUG :: Start state : [-0.00556292  0.03640566  0.02311018 -0.00533304]
+19-42-2018 23:42:55 IST - RESULT -     INFO :: Iteration: 95 Score: (200.0, [])
+19-42-2018 23:42:55 IST -   MAIN -    DEBUG :: Start state : [ 0.00432909 -0.01991257  0.02295913 -0.0486009 ]
+19-42-2018 23:42:58 IST - RESULT -     INFO :: Iteration: 96 Score: (200.0, [])
+19-42-2018 23:42:58 IST -   MAIN -    DEBUG :: Start state : [-0.03422361 -0.04854993  0.0282412  -0.01140404]
+19-43-2018 23:43:02 IST - RESULT -     INFO :: Iteration: 97 Score: (200.0, [])
+19-43-2018 23:43:02 IST -   MAIN -    DEBUG :: Start state : [-0.00749177 -0.00379161  0.04296436  0.04568007]
+19-43-2018 23:43:05 IST - RESULT -     INFO :: Iteration: 98 Score: (200.0, [])
+19-43-2018 23:43:05 IST -   MAIN -    DEBUG :: Start state : [-0.03304217 -0.03142406  0.04330751 -0.00508978]
+19-43-2018 23:43:08 IST - RESULT -     INFO :: Iteration: 99 Score: (200.0, [])
+19-43-2018 23:43:08 IST -   MAIN -    DEBUG :: Start state : [ 0.04367828  0.01492727 -0.03215607  0.04165031]
+19-43-2018 23:43:12 IST - RESULT -     INFO :: Iteration: 100 Score: (200.0, [])
+19-43-2018 23:43:12 IST - RESULT -     INFO :: Total Avg. Score over 100 consecutive iterations : 200.0
+19-43-2018 23:43:12 IST - RESULT -     INFO :: Env. solved successfully.

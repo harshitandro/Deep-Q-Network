@@ -1,0 +1,9 @@
+18-19-2018 21:19:42 IST - RESULT -     INFO :: ==============================================================================================================
+18-19-2018 21:19:42 IST - RESULT -     INFO :: OpenAI Gym Task : CartPole-v0 Solution program
+18-19-2018 21:19:42 IST - RESULT -    DEBUG :: Initial Timestamp : 1534607382.5808585
+18-19-2018 21:19:42 IST - RESULT -     INFO :: Starting new instance of the program in  train mode...
+18-19-2018 21:19:42 IST - RESULT -     INFO :: Initialised with parameters
+18-19-2018 21:19:42 IST - RESULT -    DEBUG :: Parameters list : {'mode': 'train', 'itr_count': 2000, 'batch_size': 64, 'lr': 0.0001, 'gamma': 0.99, 'render': True, 'model_path': None, 'test_total_iterations': None, 'avg_expected_reward': 195.0}
+18-42-2018 22:42:18 IST - RESULT -     INFO :: Episode 100	Average Score: 157.79	Score: 151.00	State: 2.4057616931205845	Mean Q-Target: 44.7463	Time Taken: 47.84 sec 
+19-18-2018 00:18:21 IST - RESULT -     INFO :: Episode 200	Average Score: 181.86	Score: 200.00	State: -1.2177593733710743	Mean Q-Target: 32.6824	Time Taken: 64.08 sec 
+19-25-2018 01:25:35 IST - RESULT -    DEBUG :: Completed model training with avg reward 195.36 over last 100 episodes. Training ran for total of 265 epsiodes

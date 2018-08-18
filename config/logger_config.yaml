@@ -1,0 +1,45 @@
+---
+version: 1
+disable_existing_loggers: False
+formatters:
+  simple:
+    format: "%(asctime)s - %(name)6s - %(levelname)8s :: %(message)s"
+    datefmt: '%d-%M-%Y %H:%M:%S %Z'
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: simple
+    stream: ext://sys.stdout
+
+  info_file_handler:
+    class: logging.handlers.RotatingFileHandler
+    level: DEBUG
+    formatter: simple
+    filename: logs/info.log
+    backupCount: 10
+    encoding: utf8
+
+  result_file_handler:
+    class: logging.handlers.RotatingFileHandler
+    level: DEBUG
+    formatter: simple
+    filename: results/result.log
+    backupCount: 10
+    encoding: utf8
+
+loggers:
+  MAIN:
+    level: DEBUG
+    handlers: [console, info_file_handler]
+    propagate: no
+
+  RESULT:
+    level: DEBUG
+    handlers: [console, info_file_handler, result_file_handler]
+    propagate: no
+
+root:
+  level: INFO
+  handlers: [console, info_file_handler]
