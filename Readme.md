@@ -36,8 +36,8 @@ List of OpenAI Gym Environments which are solved by agents in this repo:
     - Training : [train_CartPole-v0_1534607382.5808585.log](logs/train_CartPole-v0_1534607382.5808585.log)
     - Testing : [test_CartPole-v0_1534607382.5808585.log](logs/test_CartPole-v0_1534607382.5808585.log)
     
-    *Reward Plot:*
+    *Reward Plot:*<br>
     ![Reward Plot](results/reward_plot/reward_plot_CartPole-v0_1534607382.5808585.jpeg "Reward Plot")
     
-    *Agent Playing the Env:*
+    *Agent Playing the Env:*<br>
     ![Reward Plot](results/agent_play/agentplay_CartPole-v0_1534607382.5808585.gif "Agent Playing in the environment.")
