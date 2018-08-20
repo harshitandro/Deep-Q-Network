@@ -1,0 +1,13 @@
+19-00-2018 14:00:57 IST - RESULT -     INFO :: ==============================================================================================================
+19-00-2018 14:00:57 IST - RESULT -     INFO :: OpenAI Gym Task : MountainCar-v0 Solution program
+19-00-2018 14:00:57 IST - RESULT -    DEBUG :: Initial Timestamp : 1534667457.5695965
+19-00-2018 14:00:57 IST - RESULT -     INFO :: Starting new instance of the program in  train mode...
+19-00-2018 14:00:57 IST - RESULT -     INFO :: Initialised with parameters
+19-00-2018 14:00:57 IST - RESULT -    DEBUG :: Parameters list : {'mode': 'train', 'itr_count': 2000, 'batch_size': 64, 'lr': 0.0001, 'gamma': 0.99, 'render': True, 'model_path': None, 'test_total_iterations': None, 'avg_expected_reward': -110.0}
+19-46-2018 15:46:22 IST - RESULT -     INFO :: Episode 100	Average Score: -200.00	Score: -200.00	State: -1.0762458404410644	Mean Q-Target: -48.7003	Time Taken: 63.64 sec 
+19-21-2018 17:21:22 IST - RESULT -     INFO :: Episode 200	Average Score: -179.10	Score: -122.00	State: 0.5054721547680483	Mean Q-Target: -56.8477	Time Taken: 38.68 sec 
+19-36-2018 18:36:37 IST - RESULT -     INFO :: Episode 300	Average Score: -142.13	Score: -131.00	State: 0.5254481494232656	Mean Q-Target: -54.1273	Time Taken: 41.24 sec 
+19-44-2018 19:44:18 IST - RESULT -     INFO :: Episode 400	Average Score: -128.12	Score: -141.00	State: 0.5070880075126574	Mean Q-Target: -57.5334	Time Taken: 44.53 sec 
+19-47-2018 20:47:43 IST - RESULT -     INFO :: Episode 500	Average Score: -119.96	Score: -136.00	State: 0.5115091938981432	Mean Q-Target: -60.7414	Time Taken: 43.08 sec 
+19-47-2018 21:47:08 IST - RESULT -     INFO :: Episode 600	Average Score: -112.70	Score: -123.00	State: 0.5250461488740542	Mean Q-Target: -13.1788	Time Taken: 38.78 sec 
+19-12-2018 22:12:14 IST - RESULT -    DEBUG :: Completed model training with avg reward -108.85 over last 100 episodes. Training ran for total of 643 epsiodes
